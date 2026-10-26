@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Bali Escape · Rute Lain</title>
+  <meta name="description" content="Tiga pilihan itinerary liburan di Bali pascaacara: padel, spot viral, dan food hunting.">
+  <meta name="theme-color" content="#120a12">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --night: #120a12;
+      --plum: #1c0f1b;
+      --card: rgba(36, 18, 32, .72);
+      --line: rgba(216, 176, 106, .22);
+      --gold: #d8b06a;
+      --gold-bright: #f5dca0;
+      --cream: #f6ecd9;
+      --dim: rgba(246, 236, 217, .72);
+      --faint: rgba(246, 236, 217, .5);
+      --a: #e0793a;   /* Opsi A */
+      --b: #3fb6ad;   /* Opsi B */
+      --c: #d8b06a;   /* Opsi C */
+      --ease: cubic-bezier(.22, .8, .2, 1);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+    body {
+      background: var(--night); color: var(--cream);
+      font-family: 'Jost', system-ui, sans-serif; font-weight: 300; line-height: 1.6;
+      -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+    .serif { font-family: 'Cormorant Garamond', serif; }
+
+    /* NAV */
+    nav.top {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(18, 10, 18, .82); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+      padding-top: env(safe-area-inset-top);
+    }
+    nav.top .wrap { display: flex; align-items: center; gap: 18px; height: 56px; }
+    .brand { font-family: 'Cormorant Garamond', serif; font-size: 22px; letter-spacing: .12em; color: var(--gold-bright); text-decoration: none; white-space: nowrap; }
+    .links { display: flex; gap: 4px; margin-left: auto; overflow-x: auto; scrollbar-width: none; }
+    .links::-webkit-scrollbar { display: none; }
+    .links a {
+      font-size: 11px; letter-spacing: .18em; text-transform: uppercase; text-decoration: none;
+      padding: 8px 12px; border-radius: 999px; color: var(--dim); white-space: nowrap; font-weight: 400;
+      transition: color .3s, background .3s;
+    }
+    .links a:hover, .links a.on { color: #23101a; background: linear-gradient(90deg, #f5dca0, #c8914a); }
+
+    /* HERO */
+    .hero {
+      position: relative; text-align: center; padding: clamp(64px, 12vh, 120px) 0 clamp(56px, 9vh, 90px);
+      background:
+        radial-gradient(60% 55% at 50% 100%, rgba(247,190,120,.55), transparent 70%),
+        linear-gradient(180deg, #140a22 0%, #2a1438 35%, #6a2a42 70%, #c55a3c 100%);
+      overflow: hidden; isolation: isolate;
+    }
+    .hero::after {
+      content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 90px; z-index: -1;
+      background: linear-gradient(180deg, transparent, var(--night));
+    }
+    .back { display: inline-block; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); text-decoration: none; margin-bottom: 26px; opacity: .85; }
+    .back:hover { opacity: 1; }
+    .eyebrow { font-size: 11px; letter-spacing: .42em; text-transform: uppercase; color: var(--dim); font-weight: 400; }
+    h1 {
+      font-family: 'Cormorant Garamond', serif; font-weight: 500;
+      font-size: clamp(56px, 11vw, 140px); line-height: .95; letter-spacing: .04em; margin-top: 10px;
+      background: linear-gradient(180deg, #fff7e4 0%, #f5dca0 50%, #c8914a 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .hero p.sub { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(18px, 2.4vw, 26px); margin-top: 8px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 26px; }
+    .chip { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; padding: 7px 14px; border: 1px solid var(--gold); border-radius: 999px; background: rgba(18,10,18,.35); color: var(--gold-bright); }
+    .hero .lead { max-width: 62ch; margin: 24px auto 0; color: var(--dim); font-size: 15px; }
+
+    /* SECTIONS */
+    section { padding: clamp(48px, 8vw, 88px) 0; }
+    .sec-eyebrow { font-size: 11px; letter-spacing: .38em; text-transform: uppercase; color: var(--gold); font-weight: 400; }
+    h2 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(32px, 5vw, 54px); line-height: 1.05; margin-top: 6px; }
+    .sec-lead { color: var(--dim); max-width: 64ch; margin-top: 12px; }
+    .poleng { display: block; width: 46px; height: 12px; margin-top: 18px; outline: 1px solid var(--gold); outline-offset: 2px;
+      background: conic-gradient(#14090f 25%, #f3e7cf 0 50%, #14090f 0 75%, #f3e7cf 0) 0 0 / 12px 12px; }
+
+    /* COMPARISON */
+    .tablewrap { margin-top: 28px; overflow-x: auto; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+    table { width: 100%; min-width: 720px; border-collapse: collapse; font-size: 14px; }
+    th, td { padding: 14px 16px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+    tr:last-child td, tr:last-child th { border-bottom: 0; }
+    thead th { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 500; border-bottom: 2px solid var(--line); }
+    thead th small { display: block; font-family: 'Jost'; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--faint); font-weight: 400; }
+    tbody th { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); font-weight: 400; width: 150px; }
+    .ca { color: var(--a); } .cb { color: var(--b); } .cc { color: var(--c); }
+
+    /* OPTION */
+    .opt { --accent: var(--a); }
+    .opt[data-k="b"] { --accent: var(--b); }
+    .opt[data-k="c"] { --accent: var(--c); }
+    .opt-head {
+      position: relative; border: 1px solid var(--line); border-radius: 22px; padding: clamp(22px, 4vw, 40px);
+      background:
+        radial-gradient(70% 120% at 100% 0%, color-mix(in srgb, var(--accent) 28%, transparent), transparent 60%),
+        var(--card);
+      overflow: hidden;
+    }
+    .opt-head::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--accent); }
+    .opt-no { font-family: 'Cormorant Garamond', serif; font-size: 15px; letter-spacing: .3em; text-transform: uppercase; color: var(--accent); }
+    .opt-head h2 { font-size: clamp(38px, 6vw, 68px); }
+    .opt-head .tag { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(18px, 2.2vw, 24px); color: var(--cream); margin-top: 4px; }
+    .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 24px; }
+    .fact { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; background: rgba(18,10,18,.4); }
+    .fact b { display: block; font-size: 10px; letter-spacing: .24em; text-transform: uppercase; color: var(--faint); font-weight: 400; }
+    .fact span { font-size: 15px; }
+    .meter { display: inline-flex; gap: 4px; vertical-align: middle; }
+    .meter i { width: 18px; height: 6px; border-radius: 3px; background: rgba(246,236,217,.18); }
+    .meter i.f { background: var(--accent); }
+    .hotels { margin-top: 18px; font-size: 14px; color: var(--dim); }
+    .hotels b { color: var(--accent); font-weight: 500; }
+
+    .days { display: grid; gap: 18px; margin-top: 22px; }
+    .day { border: 1px solid var(--line); border-radius: 18px; background: var(--card); padding: clamp(18px, 3vw, 28px); }
+    .day-h { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+    .day-h .n { font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: var(--accent); font-weight: 500; }
+    .day-h h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(24px, 3vw, 32px); }
+    .tl { list-style: none; position: relative; margin-top: 10px; }
+    .tl::before { content: ""; position: absolute; left: 62px; top: 8px; bottom: 8px; width: 1px; background: var(--line); }
+    .tl li { position: relative; display: grid; grid-template-columns: 52px 1fr; gap: 26px; padding: 11px 0; }
+    .tl li::before { content: ""; position: absolute; left: 58px; top: 20px; width: 9px; height: 9px; border-radius: 50%; background: var(--night); border: 2px solid var(--accent); }
+    .tl li.t-padel::before { background: var(--accent); }
+    .tl .tm { font-size: 13px; color: var(--gold-bright); font-variant-numeric: tabular-nums; padding-top: 2px; font-weight: 500; }
+    .tl .tt { font-weight: 500; font-size: 16px; }
+    .tl .pl { font-size: 13px; color: var(--accent); letter-spacing: .02em; }
+    .tl .nt { font-size: 14px; color: var(--dim); margin-top: 2px; }
+    .tg { display: inline-block; font-size: 9px; letter-spacing: .18em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--faint); margin-left: 8px; vertical-align: middle; font-weight: 500; }
+    .t-padel .tg { color: var(--accent); border-color: var(--accent); }
+    .t-food .tg { color: var(--gold-bright); }
+    .t-viral .tg { color: #ffd9b0; }
+    .alt { margin-top: 12px; padding: 12px 14px; border-radius: 12px; border: 1px dashed var(--line); font-size: 13.5px; color: var(--dim); }
+    .alt b { color: var(--gold-bright); font-weight: 500; }
+
+    /* DIRECTORY */
+    .dir-title { margin-top: 36px; font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: var(--gold-bright); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 14px; }
+    .card { border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; background: var(--card); transition: transform .4s var(--ease), border-color .3s; }
+    .card:hover { transform: translateY(-3px); border-color: var(--gold); }
+    .card h4 { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 21px; line-height: 1.15; }
+    .card .loc { font-size: 12px; letter-spacing: .08em; color: var(--gold); margin-top: 2px; }
+    .card p { font-size: 14px; color: var(--dim); margin-top: 8px; }
+    .card .meta { margin-top: 10px; font-size: 12px; color: var(--faint); border-top: 1px solid var(--line); padding-top: 8px; }
+
+    .info { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 26px; }
+    .info .card h4 { font-size: 19px; }
+
+    footer { padding: 48px 0 calc(48px + env(safe-area-inset-bottom)); text-align: center; border-top: 1px solid var(--line); color: var(--faint); font-size: 13px; }
+    footer .serif { font-size: 28px; color: var(--gold-bright); font-style: italic; margin-bottom: 8px; }
+
+    .rv { opacity: 0; transform: translateY(20px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+    .rv.in { opacity: 1; transform: none; }
+
+    @media (max-width: 640px) {
+      .brand { font-size: 18px; }
+      .tl::before { left: 50px; }
+      .tl li { grid-template-columns: 40px 1fr; gap: 22px; }
+      .tl li::before { left: 46px; }
+      .tl .tm { font-size: 12px; }
+      thead th { font-size: 20px; }
+    }
+    @media print {
+      nav.top { display: none; }
+      body { background: #fff; color: #222; }
+      .rv { opacity: 1; transform: none; }
+      .hero, .opt-head, .day, .card, .tablewrap { background: #fff !important; border-color: #ccc; }
+      .hero { color: #222; } h1 { background: none; color: #222; -webkit-text-fill-color: #222; }
+      .dim, .lead, .tl .nt, .card p { color: #444; }
+      .day { break-inside: avoid; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } .rv { opacity: 1; transform: none; } html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">BALI ESCAPE</a>
+    <div class="links">
+      <a href="#ringkasan">Ringkasan</a>
+      <a href="#opsi-a">Opsi A</a>
+      <a href="#opsi-b">Opsi B</a>
+      <a href="#opsi-c">Opsi C</a>
+      <a href="#padel">Padel</a>
+      <a href="#viral">Viral</a>
+      <a href="#kuliner">Kuliner</a>
+      <a href="#info">Info</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <a class="back" href="index.html">← Kembali ke gerbang</a>
+    <p class="eyebrow">Pascaacara · Liburan di Pulau Dewata</p>
+    <h1>Bali Escape</h1>
+    <p class="sub">Padel, spot viral, dan berburu kuliner — tinggal pilih, semuanya sudah disusun.</p>
+    <div class="chips">
+      <span class="chip">3 Opsi</span>
+      <span class="chip">3H2M – 4H3M</span>
+      <span class="chip">Padel</span>
+      <span class="chip">Viral Spots</span>
+      <span class="chip">Food Hunting</span>
+    </div>
+    <p class="lead">Tiga rute berbeda: dataran tinggi dan air terjun, resort dengan fokus padel, serta pesisir barat yang tenang. Titik awal diasumsikan dari kawasan Nusa Dua dan dapat disesuaikan.</p>
+  </div>
+</header>
+
+<main>
+  <section id="ringkasan">
+    <div class="wrap">
+      <p class="sec-eyebrow rv">01 — Ringkasan</p>
+      <h2 class="rv">Pilih Sesuai Selera</h2>
+      <span class="poleng rv"></span>
+      <div class="tablewrap rv"><table>
+        <thead><tr><th></th><th class="ca">A · The Highlander<small>4 hari 3 malam</small></th><th class="cb">B · The Resort Player<small>3 hari 2 malam</small></th><th class="cc">C · The Slow Roads<small>3 hari 2 malam</small></th></tr></thead>
+        <tbody>
+          <tr><th>Wilayah</th><td>Bedugul – Munduk – Lovina</td><td>Nusa Dua – Jimbaran – Pecatu</td><td>Tabanan – Medewi</td></tr>
+          <tr><th>Padel</th><td>1 sesi</td><td>3 sesi</td><td>1 sesi</td></tr>
+          <tr><th>Spot viral</th><td>Handara Gate, Sekumpul</td><td>Pantai Geger</td><td>Jatiluwih, Tanah Lot, Medewi</td></tr>
+          <tr><th>Ritme</th><td>Sedang</td><td>Santai</td><td>Santai</td></tr>
+        </tbody></table></div>
+    </div>
+  </section>
+
+  <div id="options"></div>
+
+  <section id="padel">
+    <div class="wrap">
+      <p class="sec-eyebrow rv">05 — Direktori</p>
+      <h2 class="rv">Lapangan Padel</h2>
+      <span class="poleng rv"></span>
+      <p class="sec-lead rv">Lapangan dapat dipesan khusus (private) dengan pelatih. Tarif sewa umumnya sekitar Rp300–500 ribu per jam per lapangan dan pelatih sekitar Rp500–800 ribu per jam — bersifat indikatif, konfirmasi ke venue. Bawa sepatu olahraga non-marking.</p>
+      <div class="grid" id="g-padel"></div>
+    </div>
+  </section>
+
+  <section id="viral">
+    <div class="wrap">
+      <p class="sec-eyebrow rv">06 — Direktori</p>
+      <h2 class="rv">Spot Viral</h2>
+      <span class="poleng rv"></span>
+      <div class="grid" id="g-viral"></div>
+    </div>
+  </section>
+
+  <section id="kuliner">
+    <div class="wrap">
+      <p class="sec-eyebrow rv">07 — Direktori</p>
+      <h2 class="rv">Peta Kuliner</h2>
+      <span class="poleng rv"></span>
+      <div id="g-food"></div>
+    </div>
+  </section>
+
+  <section id="info">
+    <div class="wrap">
+      <p class="sec-eyebrow rv">08 — Praktis</p>
+      <h2 class="rv">Catatan Perjalanan</h2>
+      <span class="poleng rv"></span>
+      <div class="info" id="g-info"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="serif">Selamat menikmati Bali.</p>
+    <p>Itinerary ini fleksibel — urutan, durasi, dan tempat dapat disesuaikan. Seluruh estimasi waktu dan harga bersifat indikatif; mohon konfirmasi jam operasional dan reservasi sebelum berangkat.</p>
+  </div>
+</footer>
+
+<script>
+  /* ---------- DATA ---------- */
+  // item: [jam, judul, tempat, catatan, tipe]  tipe: padel | food | viral | rest | move
+  const OPTIONS = [
+    {
+      k: 'a', no: 'Opsi A', name: 'The Highlander', tag: 'Dataran tinggi yang sejuk: danau, gerbang, dan air terjun.',
+      dur: '4 hari 3 malam', base: 'Bedugul – Munduk', pace: 'Sedang',
+      meter: { Padel: 1, Viral: 3, Kuliner: 2 },
+      hotels: 'Munduk Moding Plantation, Sanak Retreat, atau villa pegunungan di Munduk',
+      days: [
+        { t: 'Raket Dulu, Lalu Naik Gunung', items: [
+          ['08.30', 'Check-out menuju Umalas', 'Nusa Dua → Umalas', '±60 menit.', 'move'],
+          ['10.00', 'Padel — game singkat', 'Lucky Padel, Umalas', 'Satu-satunya sesi sebelum masuk pegunungan.', 'padel'],
+          ['12.30', 'Makan siang', 'Canggu / Tabanan', 'Berhenti di warung sawah.', 'food'],
+          ['14.00', 'Perjalanan ke Bedugul', 'Tabanan → Bedugul', '±90 menit, jalan berkelok.', 'move'],
+          ['16.00', 'Pura Ulun Danu Beratan', 'Bedugul', 'Pura di tengah danau; sejuk dan berkabut.', 'viral'],
+          ['18.30', 'Check-in & makan malam', 'Munduk', 'Hawa sejuk, kabut sore.', 'food']
+        ]},
+        { t: 'Gerbang & Air Terjun', items: [
+          ['07.30', 'Sarapan', 'Hotel', 'Pemandangan danau dan perkebunan.', 'rest'],
+          ['09.00', 'Handara Gate', 'Bedugul', 'Gerbang pura ikonik yang viral; datang pagi sebelum ramai.', 'viral'],
+          ['10.30', 'Air terjun Munduk / Melanting', 'Munduk', 'Jalan kaki ringan dengan pemandu.', 'viral'],
+          ['13.00', 'Makan siang kebun', 'Munduk', 'Menu lokal dari kebun sekitar.', 'food'],
+          ['15.00', 'Kebun kopi & rempah', 'Munduk', 'Tur singkat dan cicip kopi.', 'viral'],
+          ['18.00', 'Makan malam hangat', 'Hotel', '', 'food']
+        ]},
+        { t: 'Pantai Utara', items: [
+          ['07.00', 'Sarapan & check-out', 'Munduk', '', 'rest'],
+          ['08.30', 'Air terjun Sekumpul', 'Buleleng', 'Trekking ringan; salah satu yang terindah di Bali.', 'viral'],
+          ['12.30', 'Makan siang ikan', 'Lovina', 'Seafood di tepi pantai.', 'food'],
+          ['15.00', 'Banyuwedang / pemandian air panas', 'Buleleng', 'Berendam setelah trekking.', 'rest'],
+          ['17.30', 'Sunset', 'Pantai Lovina', 'Pantai berpasir hitam, lebih tenang.', 'viral'],
+          ['19.00', 'Makan malam', 'Lovina', '', 'food']
+        ]},
+        { t: 'Kembali ke Selatan', items: [
+          ['07.00', 'Dolphin tour (opsional)', 'Lovina', 'Berangkat sebelum matahari terbit.', 'viral'],
+          ['09.00', 'Sarapan & check-out', 'Lovina', '', 'rest'],
+          ['10.00', 'Perjalanan pulang', 'Lovina → DPS', '±3 jam; berhenti kopi di Pancasari.', 'move'],
+          ['14.30', 'Makan siang terakhir', 'Denpasar', 'Sebelum ke bandara.', 'food']
+        ]}
+      ],
+      alt: 'Bila waktu terbatas, potong Lovina: dari Munduk langsung kembali ke selatan lewat Bedugul.'
+    },
+    {
+      k: 'b', no: 'Opsi B', name: 'The Resort Player', tag: 'Menginap di satu resort pesisir selatan dan fokus pada raket.',
+      dur: '3 hari 2 malam', base: 'Nusa Dua – Jimbaran', pace: 'Santai',
+      meter: { Padel: 3, Viral: 1, Kuliner: 2 },
+      hotels: 'The Mulia, The St. Regis Bali Resort, atau Four Seasons Jimbaran',
+      days: [
+        { t: 'Mulai dari Dekat', items: [
+          ['10.00', 'Check-in resort', 'Nusa Dua', 'Tidak perlu pindah hotel.', 'rest'],
+          ['12.30', 'Makan siang', 'Resort', 'Restoran hotel.', 'food'],
+          ['15.30', 'Padel — pemanasan', 'Padel Uluwatu, Pecatu', '±35 menit dari Nusa Dua; sesi 90 menit.', 'padel'],
+          ['18.00', 'Sunset', 'Pantai Geger / Nusa Dua', 'Pantai lebih sepi dan teduh.', 'viral'],
+          ['19.30', 'Makan malam', 'Nusa Dua', 'Restoran hotel atau Bumbu Bali.', 'food']
+        ]},
+        { t: 'Dua Sesi Sehari', items: [
+          ['07.30', 'Sarapan', 'Resort', '', 'rest'],
+          ['09.00', 'Padel — latihan dengan pelatih', 'Padel Uluwatu, Pecatu', 'Drill teknik dan game.', 'padel'],
+          ['12.00', 'Makan siang', 'Uluwarung, Uluwatu', 'Food hall lokal.', 'food'],
+          ['14.30', 'Spa & pijat', 'Resort', '', 'rest'],
+          ['16.30', 'Padel — game santai', 'Lucky Padel, Umalas', 'Atau tetap di Pecatu bila lelah.', 'padel'],
+          ['19.30', 'Makan malam seafood', 'Kedonganan / Jimbaran', 'Meja di pantai.', 'food']
+        ]},
+        { t: 'Penutup', items: [
+          ['08.30', 'Sarapan', 'Resort', '', 'rest'],
+          ['10.00', 'Padel — final match', 'Padel Uluwatu, Pecatu', 'Sesi terakhir.', 'padel'],
+          ['12.30', 'Makan siang', 'Cuca, Jimbaran', 'Tapas dan dessert.', 'food'],
+          ['15.00', 'Menuju bandara DPS', 'Jimbaran → DPS', '±20 menit.', 'move']
+        ]}
+      ],
+      alt: 'Padel bisa ditukar dengan sesi golf di Bali National Golf Club, Nusa Dua.'
+    },
+    {
+      k: 'c', no: 'Opsi C', name: 'The Slow Roads', tag: 'Menyusuri pesisir barat Bali: sawah, pura, dan ombak sepi.',
+      dur: '3 hari 2 malam', base: 'Tabanan – Medewi', pace: 'Santai',
+      meter: { Padel: 1, Viral: 2, Kuliner: 3 },
+      hotels: 'Villa sawah di Tabanan, Pan Pacific Nirwana, atau resort di Medewi',
+      days: [
+        { t: 'Sawah Terasering', items: [
+          ['09.30', 'Berangkat ke Tabanan', 'Nusa Dua → Jatiluwih', '±2 jam.', 'move'],
+          ['11.30', 'Jatiluwih Rice Terraces', 'Tabanan', 'Warisan dunia UNESCO; bersepeda santai.', 'viral'],
+          ['13.00', 'Makan siang sawah', 'Jatiluwih', 'Warung dengan pemandangan sawah.', 'food'],
+          ['15.30', 'Check-in', 'Tabanan', '', 'rest'],
+          ['17.30', 'Tanah Lot', 'Tabanan', 'Pura di atas karang saat sunset.', 'viral'],
+          ['19.30', 'Makan malam', 'Tabanan', 'Menu Bali tradisional.', 'food']
+        ]},
+        { t: 'Raket & Pantai Barat', items: [
+          ['08.00', 'Sarapan', 'Villa', '', 'rest'],
+          ['09.30', 'Padel — game pagi', 'Nelayan Padel Club, Berawa', '±50 menit dari Tabanan.', 'padel'],
+          ['12.30', 'Makan siang', 'Canggu', '', 'food'],
+          ['15.00', 'Pantai Medewi', 'Jembrana', 'Ombak panjang dan pantai sepi.', 'viral'],
+          ['18.00', 'Sunset', 'Pantai Pulukan', 'Pantai berpasir hitam.', 'viral'],
+          ['19.30', 'Makan malam laut', 'Medewi', 'Ikan bakar segar.', 'food']
+        ]},
+        { t: 'Perjalanan Pulang', items: [
+          ['08.30', 'Sarapan', 'Hotel', '', 'rest'],
+          ['10.00', 'Pura Rambut Siwi', 'Jembrana', 'Pura tepi laut yang tenang.', 'viral'],
+          ['12.30', 'Makan siang', 'Tabanan', 'Warung sawah.', 'food'],
+          ['15.00', 'Menuju bandara DPS', 'Tabanan → DPS', '±1,5 jam.', 'move']
+        ]}
+      ],
+      alt: 'Tambah Pura Taman Ayun (Mengwi) saat perjalanan pulang.'
+    }
+  ];
+
+  const PADEL = [
+    ['Lucky Padel', 'Umalas, Kerobokan', 'Klub populer; pelatih tersedia.', 'Opsi A, B'],
+    ['Padel Uluwatu', 'Pecatu', 'Lapangan dengan nuansa Bukit.', 'Opsi B'],
+    ['Nelayan Padel Club', 'Berawa, Canggu', 'Dekat Tabanan dan Canggu.', 'Opsi C']
+  ];
+
+  const VIRAL = [
+    ['Pura Ulun Danu Beratan', 'Bedugul', 'Pura di tengah danau, sejuk dan berkabut.', 'Terbaik: pagi'],
+    ['Handara Gate', 'Bedugul', 'Gerbang ikonik yang viral.', 'Terbaik: pagi'],
+    ['Air Terjun Sekumpul', 'Buleleng', 'Salah satu air terjun terindah di Bali.', 'Trekking ringan'],
+    ['Jatiluwih', 'Tabanan', 'Sawah terasering warisan UNESCO.', 'Terbaik: pagi–siang'],
+    ['Tanah Lot', 'Tabanan', 'Pura di atas karang.', 'Terbaik: sunset'],
+    ['Pantai Medewi', 'Jembrana', 'Pantai berombak panjang yang sepi.', ''],
+    ['Pura Rambut Siwi', 'Jembrana', 'Pura tepi laut yang tenang.', '']
+  ];
+
+  const FOOD = [
+    ['Dataran Tinggi & Utara', [
+      ['Warung kebun Munduk', 'Munduk', 'Menu lokal dari kebun sekitar.', ''],
+      ['Seafood Lovina', 'Lovina', 'Ikan bakar tepi pantai.', '']
+    ]],
+    ['Selatan & Barat', [
+      ['Cuca', 'Jimbaran', 'Tapas dan dessert ikonik.', 'Pesan lebih dulu'],
+      ['Uluwarung', 'Uluwatu', 'Food hall lokal.', ''],
+      ['Bumbu Bali', 'Tanjung Benoa', 'Masakan Bali tradisional.', ''],
+      ['Warung sawah Jatiluwih', 'Tabanan', 'Menu Bali dengan pemandangan sawah.', '']
+    ]]
+  ];
+
+  const INFO = [
+    ['Transportasi', 'Mobil pribadi dengan sopir sepanjang perjalanan. Jalan pegunungan berkelok — siapkan obat anti mabuk bila perlu.'],
+    ['Reservasi', 'Pesan H-2 hingga H-3: resort, lapangan padel, dan pemandu trekking.'],
+    ['Pakaian', 'Jaket tipis untuk dataran tinggi, sepatu trekking ringan, dan pakaian sopan untuk pura.'],
+    ['Cuaca', 'Pegunungan lebih dingin dan sering berkabut; pagi paling cerah.'],
+    ['Kesehatan', 'Banyak minum, tabir surya, dan istirahat cukup setelah trekking.'],
+    ['Catatan biaya', 'Indikasi: padel Rp300–500rb/jam, mobil + sopir Rp1,2–1,8jt/hari, fine dining Rp1–2,5jt/orang.']
+  ];
+
+  /* ---------- RENDER ---------- */
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const TAGS = { padel: 'Padel', food: 'Kuliner', viral: 'Viral', rest: 'Rehat', move: 'Transfer' };
+
+  const opts = OPTIONS.map((o, idx) => {
+    const meter = Object.entries(o.meter).map(([k, v]) =>
+      `<div class="fact"><b>${k}</b><span class="meter">${[1, 2, 3].map(i => `<i class="${i <= v ? 'f' : ''}"></i>`).join('')}</span></div>`).join('');
+    const days = o.days.map((d, i) => `
+      <article class="day rv">
+        <div class="day-h"><span class="n">Hari ${i + 1}</span><h3>${esc(d.t)}</h3></div>
+        <ul class="tl">
+          ${d.items.map(it => `
+          <li class="t-${it[4]}">
+            <span class="tm">${esc(it[0])}</span>
+            <div>
+              <div class="tt">${esc(it[1])}<span class="tg">${TAGS[it[4]]}</span></div>
+              ${it[2] ? `<div class="pl">${esc(it[2])}</div>` : ''}
+              ${it[3] ? `<div class="nt">${esc(it[3])}</div>` : ''}
+            </div>
+          </li>`).join('')}
+        </ul>
+      </article>`).join('');
+    return `
+    <section class="opt" id="opsi-${o.k}" data-k="${o.k}">
+      <div class="wrap">
+        <div class="opt-head rv">
+          <p class="opt-no">${o.no}</p>
+          <h2>${esc(o.name)}</h2>
+          <p class="tag">${esc(o.tag)}</p>
+          <div class="facts">
+            <div class="fact"><b>Durasi</b><span>${o.dur}</span></div>
+            <div class="fact"><b>Wilayah</b><span>${o.base}</span></div>
+            <div class="fact"><b>Ritme</b><span>${o.pace}</span></div>
+            ${meter}
+          </div>
+          <p class="hotels"><b>Penginapan:</b> ${esc(o.hotels)}</p>
+        </div>
+        <div class="days">${days}</div>
+        <p class="alt rv"><b>Catatan fleksibel:</b> ${esc(o.alt)}</p>
+      </div>
+    </section>`;
+  }).join('');
+  document.getElementById('options').innerHTML = opts;
+
+  const card = c => `<div class="card rv"><h4>${esc(c[0])}</h4><div class="loc">${esc(c[1])}</div><p>${esc(c[2])}</p>${c[3] ? `<div class="meta">${esc(c[3])}</div>` : ''}</div>`;
+  document.getElementById('g-padel').innerHTML = PADEL.map(card).join('');
+  document.getElementById('g-viral').innerHTML = VIRAL.map(card).join('');
+  document.getElementById('g-food').innerHTML = FOOD.map(g =>
+    `<h3 class="dir-title rv">${esc(g[0])}</h3><div class="grid">${g[1].map(card).join('')}</div>`).join('');
+  document.getElementById('g-info').innerHTML = INFO.map(i =>
+    `<div class="card rv"><h4>${esc(i[0])}</h4><p>${esc(i[1])}</p></div>`).join('');
+
+  /* ---------- MOTION & NAV ---------- */
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .08 }) : null;
+  document.querySelectorAll('.rv').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+
+  const links = [...document.querySelectorAll('.links a')];
+  const secs = links.map(a => document.querySelector(a.getAttribute('href')));
+  if ('IntersectionObserver' in window) {
+    const spy = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
+    }), { rootMargin: '-45% 0px -50% 0px' });
+    secs.forEach(s => s && spy.observe(s));
+  }
+</script>
+</body>
+</html>
