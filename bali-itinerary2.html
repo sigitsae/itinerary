@@ -1,0 +1,2502 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bali Itinerary Options — Padel · Viral Spots · Culinary Journey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a2e3d;
+    --ink-soft: #1a4a5e;
+    --sand: #f4ebd9;
+    --sand-deep: #e8d4a8;
+    --cream: #fbf6ec;
+    --coral: #d9593f;
+    --gold: #b8945a;
+    --gold-soft: #c9a87a;
+    --teal-deep: #0f4c4c;
+    --teal: #1d6b6b;
+    --jungle: #1b3a2b;
+    --line: rgba(10,46,61,0.12);
+    --shadow-soft: 0 10px 40px rgba(10,46,61,0.08);
+    --shadow-mid: 0 18px 50px rgba(10,46,61,0.14);
+    --shadow-deep: 0 30px 70px rgba(10,46,61,0.22);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ───────────────────────── HERO ───────────────────────── */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    background:
+      linear-gradient(135deg, rgba(10,46,61,0.65) 0%, rgba(15,76,76,0.55) 50%, rgba(10,46,61,0.75) 100%),
+      radial-gradient(circle at 20% 30%, rgba(184,148,90,0.25), transparent 50%),
+      linear-gradient(180deg, #0a2e3d 0%, #1d6b6b 100%);
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.4), transparent),
+      radial-gradient(1px 1px at 60% 70%, rgba(255,255,255,0.3), transparent),
+      radial-gradient(1.5px 1.5px at 80% 20%, rgba(255,255,255,0.35), transparent),
+      radial-gradient(1px 1px at 35% 85%, rgba(255,255,255,0.25), transparent);
+    background-size: 250px 250px;
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  .hero-curve {
+    position: absolute; bottom: -1px; left: 0; right: 0; width: 100%; height: auto;
+    z-index: 2;
+  }
+  .hero-content {
+    position: relative; z-index: 3;
+    max-width: 880px;
+    padding: 0 24px;
+    animation: rise 1.2s cubic-bezier(.2,.7,.2,1) both;
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(40px);} to {opacity:1; transform:none;} }
+
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--sand-deep);
+    padding: 8px 18px;
+    border: 1px solid rgba(232,212,168,0.4);
+    border-radius: 100px;
+    margin-bottom: 28px;
+    backdrop-filter: blur(6px);
+  }
+  .hero-eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--coral); box-shadow: 0 0 12px var(--coral); }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: clamp(2.6rem, 7vw, 5.8rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+  }
+  .hero h1 .italic {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--sand-deep);
+  }
+  .hero-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+    font-weight: 300;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 0.02em;
+    max-width: 620px;
+    margin: 0 auto 40px;
+  }
+  .hero-tags {
+    display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+    margin-bottom: 44px;
+  }
+  .hero-tag {
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
+    padding: 9px 18px; border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 100px;
+    color: rgba(255,255,255,0.9);
+    font-weight: 500;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+  }
+  .hero-tag:hover { background: rgba(255,255,255,0.12); border-color: var(--sand-deep); }
+  .hero-cta {
+    display: inline-flex; align-items: center; gap: 14px;
+    padding: 16px 32px;
+    background: var(--sand-deep);
+    color: var(--ink);
+    font-size: 13px; font-weight: 600;
+    letter-spacing: 2px; text-transform: uppercase;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(.2,.7,.2,1);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  }
+  .hero-cta:hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(0,0,0,0.35); background: #fff; }
+  .hero-cta .arrow { font-size: 18px; }
+
+  .hero-meta {
+    position: absolute; bottom: 80px; left: 0; right: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 50px;
+    z-index: 3;
+    color: rgba(255,255,255,0.7);
+    font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+  }
+  .hero-meta span { display: flex; align-items: center; gap: 10px; }
+  .hero-meta .line { width: 50px; height: 1px; background: rgba(255,255,255,0.4); }
+
+  /* ───────────────────────── NAV ───────────────────────── */
+  .floating-nav {
+    position: fixed; top: 24px; right: 24px;
+    z-index: 100;
+    background: rgba(251,246,236,0.92);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(10,46,61,0.08);
+    border-radius: 100px;
+    padding: 8px 10px;
+    display: flex; gap: 4px;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.3s ease;
+  }
+  .floating-nav a {
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 12px; font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    border-radius: 100px;
+    transition: all 0.25s ease;
+  }
+  .floating-nav a:hover { background: var(--ink); color: var(--sand); }
+  .floating-nav a.active { background: var(--ink); color: var(--sand); }
+
+  /* ───────────────────────── INTRO ───────────────────────── */
+  .intro {
+    padding: 130px 24px 90px;
+    max-width: 1200px; margin: 0 auto;
+    text-align: center;
+  }
+  .intro-eyebrow {
+    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--coral); font-weight: 600;
+    margin-bottom: 22px;
+    display: flex; align-items: center; justify-content: center; gap: 14px;
+  }
+  .intro-eyebrow::before, .intro-eyebrow::after {
+    content: ''; width: 30px; height: 1px; background: var(--gold);
+  }
+  .intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 28px;
+  }
+  .intro h2 .italic { font-style: italic; color: var(--teal-deep); }
+  .intro p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+    line-height: 1.7;
+    color: var(--ink-soft);
+    max-width: 720px; margin: 0 auto 16px;
+    font-weight: 400;
+  }
+
+  /* ───────────────────────── COMPARISON CARDS ───────────────────────── */
+  .comparison {
+    padding: 60px 24px 100px;
+    max-width: 1280px; margin: 0 auto;
+  }
+  .comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 60px;
+  }
+  .opt-card {
+    position: relative;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    transition: all 0.5s cubic-bezier(.2,.7,.2,1);
+    box-shadow: var(--shadow-soft);
+    display: flex; flex-direction: column;
+  }
+  .opt-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-mid); }
+  .opt-card.featured { border: 1px solid var(--gold); }
+  .opt-card.featured::before {
+    content: 'REKOMENDASI';
+    position: absolute; top: 18px; right: -32px;
+    background: var(--gold); color: #fff;
+    font-size: 10px; letter-spacing: 2px; font-weight: 700;
+    padding: 6px 40px;
+    transform: rotate(35deg);
+    z-index: 5;
+  }
+  .opt-card-header {
+    padding: 36px 32px 28px;
+    background: linear-gradient(135deg, #fbf6ec 0%, #f4ebd9 100%);
+    border-bottom: 1px solid var(--line);
+    position: relative;
+  }
+  .opt-card.featured .opt-card-header {
+    background: linear-gradient(135deg, #0f4c4c 0%, #1d6b6b 100%);
+    color: #fff;
+  }
+  .opt-card.featured .opt-card-header .opt-label,
+  .opt-card.featured .opt-card-header .opt-name,
+  .opt-card.featured .opt-card-header .opt-tagline { color: #fff; }
+  .opt-card.featured .opt-card-header .opt-name .italic { color: var(--sand-deep); }
+
+  .opt-label {
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--coral); font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .opt-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.85rem; font-weight: 500;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .opt-name .italic { font-style: italic; color: var(--teal-deep); }
+  .opt-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem; font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+  .opt-card-body {
+    padding: 28px 32px 32px;
+    flex: 1; display: flex; flex-direction: column;
+  }
+  .opt-stats {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 12px; margin-bottom: 24px;
+    padding-bottom: 24px; border-bottom: 1px dashed var(--line);
+  }
+  .opt-stat { text-align: center; }
+  .opt-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem; font-weight: 600;
+    color: var(--teal-deep);
+    line-height: 1;
+  }
+  .opt-card.featured .opt-stat-num { color: var(--sand-deep); }
+  .opt-stat-label {
+    font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--ink-soft); opacity: 0.7;
+    margin-top: 4px;
+  }
+  .opt-highlights {
+    list-style: none;
+    flex: 1;
+    margin-bottom: 28px;
+  }
+  .opt-highlights li {
+    display: flex; align-items: flex-start; gap: 12px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    padding: 7px 0;
+    line-height: 1.5;
+  }
+  .opt-highlights li::before {
+    content: '◆';
+    color: var(--gold);
+    font-size: 9px;
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+  .opt-best-for {
+    background: var(--cream);
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    border-left: 3px solid var(--coral);
+  }
+  .opt-best-for-label {
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--coral); font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .opt-best-for-text {
+    font-size: 13px;
+    color: var(--ink);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+  }
+  .opt-card-cta {
+    display: block;
+    text-align: center;
+    padding: 13px 24px;
+    background: var(--ink);
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+  }
+  .opt-card-cta:hover { background: var(--coral); transform: translateY(-2px); }
+  .opt-card.featured .opt-card-cta { background: var(--coral); }
+  .opt-card.featured .opt-card-cta:hover { background: #c14a32; }
+
+  /* ───────────────────────── ITINERARY DETAIL ───────────────────────── */
+  .itinerary-section {
+    padding: 100px 24px;
+    max-width: 1280px; margin: 0 auto;
+    position: relative;
+  }
+  .opt-divider {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  .opt-divider .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 14rem; font-weight: 800;
+    color: var(--cream);
+    line-height: 0.8;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -45%);
+    z-index: 0;
+    letter-spacing: -0.04em;
+  }
+  .opt-divider-content {
+    position: relative; z-index: 1;
+  }
+  .opt-divider-eyebrow {
+    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--coral); font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .opt-divider h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+  .opt-divider h2 .italic { font-style: italic; color: var(--teal-deep); }
+  .opt-divider-desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+    max-width: 640px; margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* Day blocks */
+  .day-block {
+    background: #fff;
+    border-radius: 24px;
+    padding: 44px 44px 36px;
+    margin-bottom: 28px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+  .day-block::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 5px;
+    background: linear-gradient(180deg, var(--coral), var(--gold));
+  }
+  .day-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    flex-wrap: wrap; gap: 18px;
+    padding-bottom: 24px; margin-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  .day-header-left { flex: 1; min-width: 250px; }
+  .day-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--coral); font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .day-tag .num-circle {
+    width: 22px; height: 22px;
+    background: var(--coral); color: #fff;
+    border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px; font-weight: 600;
+  }
+  .day-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.85rem; font-weight: 500;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+  .day-title .italic { font-style: italic; color: var(--teal-deep); }
+  .day-region {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+  }
+  .day-region::before {
+    content: '◉'; margin-right: 8px; color: var(--gold);
+  }
+  .day-header-right {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    align-items: center;
+  }
+  .day-pill {
+    font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 100px;
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-weight: 500;
+    background: var(--cream);
+  }
+  .day-pill.sport { color: var(--teal-deep); border-color: var(--teal); }
+  .day-pill.viral { color: var(--coral); border-color: var(--coral); }
+  .day-pill.food { color: var(--gold); border-color: var(--gold); }
+
+  /* Schedule items */
+  .schedule {
+    list-style: none;
+    position: relative;
+  }
+  .schedule::before {
+    content: '';
+    position: absolute; left: 71px; top: 12px; bottom: 12px;
+    width: 1px;
+    background: linear-gradient(180deg, var(--line), transparent);
+  }
+  .schedule-item {
+    display: grid;
+    grid-template-columns: 80px 36px 1fr;
+    gap: 18px;
+    padding: 14px 0;
+    align-items: flex-start;
+    position: relative;
+  }
+  .sch-time {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem; font-weight: 600;
+    color: var(--teal-deep);
+    text-align: right;
+    padding-top: 2px;
+    letter-spacing: -0.01em;
+  }
+  .sch-icon {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--cream);
+    border: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    color: var(--gold);
+    z-index: 1;
+    position: relative;
+  }
+  .sch-icon.sport { background: var(--teal-deep); color: #fff; border-color: var(--teal-deep); }
+  .sch-icon.viral { background: var(--coral); color: #fff; border-color: var(--coral); }
+  .sch-icon.food { background: var(--gold); color: #fff; border-color: var(--gold); }
+  .sch-content { padding-top: 4px; }
+  .sch-content h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px; font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+  .sch-content .loc {
+    font-size: 12px;
+    color: var(--ink-soft);
+    opacity: 0.8;
+    margin-bottom: 6px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .sch-content .loc svg { width: 11px; height: 11px; flex-shrink: 0; }
+  .sch-content .note {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    font-style: italic;
+  }
+  .sch-content .tag-row {
+    display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap;
+  }
+  .sch-content .mini-tag {
+    font-size: 9px; letter-spacing: 1px; text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: var(--cream);
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  .sch-content .mini-tag.sport { background: rgba(15,76,76,0.1); color: var(--teal-deep); }
+  .sch-content .mini-tag.viral { background: rgba(217,89,63,0.1); color: var(--coral); }
+  .sch-content .mini-tag.food { background: rgba(184,148,90,0.15); color: var(--gold); }
+
+  /* Hotel box */
+  .hotel-rec {
+    margin-top: 28px;
+    padding: 22px 26px;
+    background: linear-gradient(135deg, var(--cream) 0%, #f4ebd9 100%);
+    border-radius: 16px;
+    border-left: 3px solid var(--gold);
+    display: flex; gap: 18px; align-items: flex-start; flex-wrap: wrap;
+  }
+  .hotel-rec-label {
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold); font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .hotel-rec-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem; font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .hotel-rec-why {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px; font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .hotel-rec-icon {
+    font-size: 24px;
+    color: var(--gold);
+    margin-right: 6px;
+  }
+
+  /* ───────────────────────── HIGHLIGHTS GRID ───────────────────────── */
+  .highlights-section {
+    padding: 100px 24px;
+    background: linear-gradient(180deg, var(--cream) 0%, #fff 100%);
+  }
+  .highlights-inner { max-width: 1280px; margin: 0 auto; }
+  .highlights-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .highlights-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+  .highlights-header h3 .italic { font-style: italic; color: var(--teal-deep); }
+  .highlights-header p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+    max-width: 620px; margin: 0 auto;
+  }
+
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .cat-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-soft);
+    transition: all 0.4s ease;
+  }
+  .cat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-mid); }
+  .cat-head {
+    padding: 28px 26px 18px;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+  }
+  .cat-head.sport { background: linear-gradient(135deg, #0f4c4c 0%, #1d6b6b 100%); color: #fff; }
+  .cat-head.viral { background: linear-gradient(135deg, #d9593f 0%, #e87554 100%); color: #fff; }
+  .cat-head.food { background: linear-gradient(135deg, #b8945a 0%, #c9a87a 100%); color: #fff; }
+  .cat-emoji { font-size: 28px; margin-bottom: 10px; display: block; }
+  .cat-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem; font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .cat-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.95rem; font-style: italic;
+    opacity: 0.85;
+  }
+  .cat-body { padding: 22px 26px 28px; }
+  .cat-place {
+    padding: 14px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .cat-place:last-child { border-bottom: none; padding-bottom: 0; }
+  .cat-place:first-child { padding-top: 0; }
+  .cat-place-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px; font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .cat-place-name .pin {
+    width: 14px; height: 14px;
+    background: var(--gold-soft);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    flex-shrink: 0;
+    position: relative;
+  }
+  .cat-place-name .pin::after {
+    content: ''; position: absolute;
+    width: 4px; height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    top: 5px; left: 5px;
+  }
+  .cat-head.sport ~ .cat-body .pin { background: var(--teal); }
+  .cat-head.viral ~ .cat-body .pin { background: var(--coral); }
+  .cat-place-region {
+    font-size: 12px;
+    color: var(--ink-soft);
+    opacity: 0.75;
+    margin-left: 22px;
+    margin-bottom: 6px;
+  }
+  .cat-place-note {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    margin-left: 22px;
+    font-style: italic;
+  }
+
+  /* ───────────────────────── PRACTICAL INFO ───────────────────────── */
+  .practical {
+    padding: 100px 24px;
+    background: var(--ink);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .practical::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(circle at 80% 20%, rgba(184,148,90,0.15), transparent 50%);
+    pointer-events: none;
+  }
+  .practical-inner {
+    max-width: 1200px; margin: 0 auto;
+    position: relative; z-index: 1;
+  }
+  .practical-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .practical-header .eyebrow {
+    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--sand-deep); font-weight: 600;
+    margin-bottom: 18px;
+  }
+  .practical-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .practical-header h3 .italic { font-style: italic; color: var(--sand-deep); }
+
+  .practical-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  .practical-card {
+    padding: 32px 30px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+  }
+  .practical-card:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(232,212,168,0.3);
+    transform: translateY(-4px);
+  }
+  .practical-card-icon {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .practical-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem; font-weight: 500;
+    color: var(--sand-deep);
+    margin-bottom: 12px;
+  }
+  .practical-card p {
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.6;
+  }
+  .practical-card ul {
+    list-style: none;
+    margin-top: 8px;
+  }
+  .practical-card ul li {
+    font-size: 13px;
+    color: rgba(255,255,255,0.75);
+    padding: 4px 0;
+    padding-left: 18px;
+    position: relative;
+  }
+  .practical-card ul li::before {
+    content: '—';
+    position: absolute; left: 0;
+    color: var(--gold-soft);
+  }
+
+  /* ───────────────────────── FOOTER ───────────────────────── */
+  .footer {
+    padding: 50px 24px 40px;
+    background: #061821;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-mark {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--sand-deep);
+    margin-bottom: 10px;
+  }
+  .footer p {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  /* ───────────────────────── RESPONSIVE ───────────────────────── */
+  @media (max-width: 1024px) {
+    .comparison-grid { grid-template-columns: 1fr; }
+    .cat-grid { grid-template-columns: 1fr; }
+    .opt-divider .num { font-size: 9rem; }
+    .hero-meta { display: none; }
+  }
+  @media (max-width: 720px) {
+    .floating-nav { display: none; }
+    .intro { padding: 80px 20px 50px; }
+    .comparison { padding: 40px 16px 60px; }
+    .itinerary-section { padding: 60px 16px; }
+    .day-block { padding: 28px 22px; }
+    .schedule-item {
+      grid-template-columns: 60px 32px 1fr;
+      gap: 12px;
+    }
+    .sch-time { font-size: 0.9rem; }
+    .sch-icon { width: 32px; height: 32px; font-size: 12px; }
+    .schedule::before { left: 60px; }
+    .opt-card-header { padding: 28px 24px 22px; }
+    .opt-card-body { padding: 22px 24px 26px; }
+    .highlights-section { padding: 60px 16px; }
+    .practical { padding: 60px 16px; }
+    .opt-divider .num { font-size: 6rem; }
+  }
+
+  /* Print */
+  @media print {
+    .floating-nav, .hero-curve, .hero-meta { display: none; }
+    .hero { min-height: auto; padding: 60px 24px; }
+    body { background: #fff; }
+    .day-block { box-shadow: none; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ FLOATING NAV ═══════════════ -->
+<nav class="floating-nav">
+  <a href="#option-a">Opsi A</a>
+  <a href="#option-b">Opsi B</a>
+  <a href="#option-c">Opsi C</a>
+  <a href="#highlights">Spotlight</a>
+  <a href="#practical">Praktis</a>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow"><span class="dot"></span> Pulau Dewata · Curated Itinerary</div>
+    <h1>Bali, <span class="italic">Setelah Event</span><br>Sebuah Perjalanan</h1>
+    <p class="hero-sub">Tiga skenario perjalanan yang dirancang khusus — memadukan padel, tempat-tempat viral, dan petualangan kuliner dari Canggu hingga Uluwatu.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">Padel</span>
+      <span class="hero-tag">Viral Spots</span>
+      <span class="hero-tag">Food Hunting</span>
+      <span class="hero-tag">Sunset</span>
+      <span class="hero-tag">Culture</span>
+    </div>
+    <a href="#intro" class="hero-cta">Lihat Opsi Itinerary <span class="arrow">→</span></a>
+  </div>
+
+  <div class="hero-meta">
+    <span><span class="line"></span> 3 Skenario</span>
+    <span>3D2N · 4D3N · 5D4N</span>
+    <span>Canggu · Ubud · Uluwatu · Nusa Penida <span class="line"></span></span>
+  </div>
+
+  <svg class="hero-curve" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" fill="#fbf6ec"></path>
+  </svg>
+</section>
+
+<!-- ═══════════════ INTRO ═══════════════ -->
+<section class="intro" id="intro">
+  <div class="intro-eyebrow">Pendahuluan</div>
+  <h2>Tiga Cara Menikmati <span class="italic">Bali</span><br>Setelah Acara Resmi</h2>
+  <p>Setelah agenda resmi selesai, Bali menawarkan rute liburan yang sangat fleksibel — mulai dari sesi padel pagi di Canggu, hunting foto di spot-spot Instagramable, hingga kuliner malam di tepi tebing Uluwatu. Berikut tiga opsi yang bisa dipilih sesuai durasi dan preferensi. Setiap opsi sudah dilengkapi jadwal harian, lokasi, rekomendasi hotel, serta alternatif agar dapat langsung dipahami tanpa pertanyaan tambahan.</p>
+</section>
+
+<!-- ═══════════════ COMPARISON CARDS ═══════════════ -->
+<section class="comparison">
+  <div class="comparison-grid">
+
+    <!-- Opsi A -->
+    <div class="opt-card">
+      <div class="opt-card-header">
+        <div class="opt-label">Opsi A · Short Escape</div>
+        <div class="opt-name">Sport &amp; <span class="italic">Beach Vibe</span></div>
+        <div class="opt-tagline">Fokus Canggu &amp; Seminyak — padel intensive dan beach club hopping.</div>
+      </div>
+      <div class="opt-card-body">
+        <div class="opt-stats">
+          <div class="opt-stat"><div class="opt-stat-num">3</div><div class="opt-stat-label">Hari</div></div>
+          <div class="opt-stat"><div class="opt-stat-num">2</div><div class="opt-stat-label">Padel</div></div>
+          <div class="opt-stat"><div class="opt-stat-num">8</div><div class="opt-stat-label">Spot</div></div>
+        </div>
+        <ul class="opt-highlights">
+          <li>2 sesi padel di klub terbaik Canggu</li>
+          <li>Sunset di La Brisa &amp; Potato Head</li>
+          <li>Tanah Lot + fine dining Seminyak</li>
+          <li>Cafe hopping di kawasan hipster</li>
+        </ul>
+        <div class="opt-best-for">
+          <div class="opt-best-for-label">Paling Cocok Untuk</div>
+          <div class="opt-best-for-text">Waktu singkat, fokus pada sport &amp; vibe pantai barat.</div>
+        </div>
+        <a href="#option-a" class="opt-card-cta">Lihat Detail Opsi A</a>
+      </div>
+    </div>
+
+    <!-- Opsi B - Featured -->
+    <div class="opt-card featured">
+      <div class="opt-card-header">
+        <div class="opt-label">Opsi B · Rekomendasi</div>
+        <div class="opt-name">Sport &amp; <span class="italic">Culture Blend</span></div>
+        <div class="opt-tagline">Canggu + Ubud + Uluwatu — kombinasi seimbang sport, budaya, dan kuliner.</div>
+      </div>
+      <div class="opt-card-body">
+        <div class="opt-stats">
+          <div class="opt-stat"><div class="opt-stat-num">4</div><div class="opt-stat-label">Hari</div></div>
+          <div class="opt-stat"><div class="opt-stat-num">2</div><div class="opt-stat-label">Padel</div></div>
+          <div class="opt-stat"><div class="opt-stat-num">12</div><div class="opt-stat-label">Spot</div></div>
+        </div>
+        <ul class="opt-highlights">
+          <li>Padel di Canggu + Ubud cultural day</li>
+          <li>Babi Guling Ibu Oka + Bebek Bengil</li>
+          <li>Tegallalang Rice Terrace + Campuhan Ridge</li>
+          <li>Uluwatu sunset + Kecak Dance + clifftop dinner</li>
+        </ul>
+        <div class="opt-best-for">
+          <div class="opt-best-for-label">Paling Cocok Untuk</div>
+          <div class="opt-best-for-text">Pengalaman lengkap: sport, kuliner lokal, dan budaya Bali.</div>
+        </div>
+        <a href="#option-b" class="opt-card-cta">Lihat Detail Opsi B</a>
+      </div>
+    </div>
+
+    <!-- Opsi C -->
+    <div class="opt-card">
+      <div class="opt-card-header">
+        <div class="opt-label">Opsi C · Complete Journey</div>
+        <div class="opt-name">Sport, Culture &amp; <span class="italic">Island</span></div>
+        <div class="opt-tagline">Termasuk Nusa Penida — eksplorasi penuh Bali selatan + pulau.</div>
+      </div>
+      <div class="opt-card-body">
+        <div class="opt-stats">
+          <div class="opt-stat"><div class="opt-stat-num">5</div><div class="opt-stat-label">Hari</div></div>
+          <div class="opt-stat"><div class="opt-stat-num">2</div><div class="opt-stat-label">Padel</div></div>
+          <div class="opt-stat"><div class="opt-stat-num">16</div><div class="opt-stat-label">Spot</div></div>
+        </div>
+        <ul class="opt-highlights">
+          <li>Semua highlight Opsi B + Nusa Penida</li>
+          <li>Kelingking Beach &amp; Broken Beach</li>
+          <li>Snorkeling Crystal Bay</li>
+          <li>2 sesi padel + 5 fine dining</li>
+        </ul>
+        <div class="opt-best-for">
+          <div class="opt-best-for-label">Paling Cocok Untuk</div>
+          <div class="opt-best-for-text">Liburan maksimal — eksplorasi sport, budaya, dan pulau terpencil.</div>
+        </div>
+        <a href="#option-c" class="opt-card-cta">Lihat Detail Opsi C</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ════════════════════════ OPSI A — 3D2N ═══════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section class="itinerary-section" id="option-a">
+  <div class="opt-divider">
+    <div class="num">A</div>
+    <div class="opt-divider-content">
+      <div class="opt-divider-eyebrow">Opsi A · 3 Hari 2 Malam</div>
+      <h2>Sport &amp; <span class="italic">Beach Vibe</span></h2>
+      <p class="opt-divider-desc">Perjalanan ringkas berbasis Canggu-Seminyak: dua sesi padel, beach club hopping, dan satu kunjungan heritage ke Tanah Lot.</p>
+    </div>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">1</span> Hari Pertama</div>
+        <div class="day-title">Arrival &amp; <span class="italic">Sunset Welcome</span></div>
+        <div class="day-region">Canggu — Echo Beach</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill sport">Padel</span>
+        <span class="day-pill viral">Beach Club</span>
+        <span class="day-pill food">Fine Dining</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">15:00</div>
+        <div class="sch-icon">🏨</div>
+        <div class="sch-content">
+          <h4>Check-in Hotel &amp; Refresh</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Canggu, Bali
+          </div>
+          <p class="note">Disarankan hotel berlokasi dekat dengan klub padel untuk efisiensi waktu dan akses langsung ke pantai.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">16:00</div>
+        <div class="sch-icon sport">🎾</div>
+        <div class="sch-content">
+          <h4>Sesi Padel Pertama — Padel Club Bali Canggu</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Pantai Berawa No.99, Canggu · 8.6512°S, 115.1376°E
+          </div>
+          <p class="note">Klub padel standar internasional dengan 4 lapangan indoor, rental pro-grade, dan lounge. Booking jauh hari karena slot sore sangat ramai. Tersedia pelatih bersertifikat untuk warm-up session 30 menit.</p>
+          <div class="tag-row"><span class="mini-tag sport">Padel · 90 menit</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">18:30</div>
+        <div class="sch-icon viral">🌅</div>
+        <div class="sch-content">
+          <h4>Sunset di La Brisa Beach Club</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Echo Beach, Jl. Subak Canggu, Canggu
+          </div>
+          <p class="note">Beach club bertema kapal kayu kuno dengan kolong infinity pool menghadap langsung ke sunset. Spot foto paling viral di Canggu. Reservasi daybed atau cabana untuk pengalaman terbaik.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral Spot</span><span class="mini-tag">Sunset</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">20:00</div>
+        <div class="sch-icon food">🍽️</div>
+        <div class="sch-content">
+          <h4>Dinner — Bambu Seminyak</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Laksmana No.1, Seminyak
+          </div>
+          <p class="note">Restoran signature dengan konsep bamboo pavilion, menu modern Asian fusion. Reservasi private pavilion untuk dinner intim. Cocok untuk post-event relaxation.</p>
+          <div class="tag-row"><span class="mini-tag food">Modern Asian</span></div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="hotel-rec">
+      <div>
+        <div class="hotel-rec-icon">🏨</div>
+      </div>
+      <div style="flex:1; min-width: 240px;">
+        <div class="hotel-rec-label">Rekomendasi Menginap</div>
+        <div class="hotel-rec-name">COMO Uma Canggu / Hotel Tugu Canggu</div>
+        <div class="hotel-rec-why">Lokasi strategis dekat klub padel, pantai, dan beach club. COMO Uma cocok untuk wellness &amp; privacy; Tugu untuk pengalaman budaya &amp; seni Bali yang autentik.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">2</span> Hari Kedua</div>
+        <div class="day-title">Hipster <span class="italic">Canggu Day</span></div>
+        <div class="day-region">Canggu — Seminyak</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill sport">Padel</span>
+        <span class="day-pill viral">Café Hopping</span>
+        <span class="day-pill food">Italian Night</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">08:00</div>
+        <div class="sch-icon food">☕</div>
+        <div class="sch-content">
+          <h4>Sarapan — Crate Café / Revolver Espresso</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Batu Bolong No.18 / Jl. Kayu Aya, Seminyak
+          </div>
+          <p class="note">Crate Café untuk menu all-day breakfast dengan vibe industrial. Revolver Espresso untuk kopi specialty single-origin paling legendaris di Bali.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">09:30</div>
+        <div class="sch-icon sport">🎾</div>
+        <div class="sch-content">
+          <h4>Sesi Padel Kedua — Sunset Padel Berawa</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Pura Batu Pageh, Berawa, Canggu
+          </div>
+          <p class="note">Lapangan outdoor dengan suasana lebih santai, cocok untuk sesi pagi. Tersedia coach on-demand untuk drill technique. Setelah sesi, fasilitas shower &amp; café di tempat.</p>
+          <div class="tag-row"><span class="mini-tag sport">Padel · 90 menit</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">12:30</div>
+        <div class="sch-icon food">🥗</div>
+        <div class="sch-content">
+          <h4>Lunch — Sisterfields Café / The Shady Shack</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Seminyak / Jl. Kayu Putih No.5, Canggu
+          </div>
+          <p class="note">Sisterfields untuk modern Australian brunch. The Shady Shack untuk menu plant-based &amp; healthy bowls — spot foto viral dengan latar hijau tropis.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">15:00</div>
+        <div class="sch-icon viral">🏖️</div>
+        <div class="sch-content">
+          <h4>Beach Club — The Lawn / Tropicola</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Pura Batu Mejan, Canggu / Batu Belig
+          </div>
+          <p class="note">The Lawn untuk suasana chill di tepi rumput menghadap laut. Tropicola untuk vibe retro Miami dengan kolam berwarna-warni — spot foto sangat viral.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral Spot</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">19:00</div>
+        <div class="sch-icon food">🍝</div>
+        <div class="sch-content">
+          <h4>Dinner — Da Maria Seminyak</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Kayu Aya No.85, Seminyak
+          </div>
+          <p class="note">Restoran Italia paling ikonik di Bali dengan interior blue-and-white Amalfi style. Pizza oven authentic, pasta fresh. Reservasi outdoor terrace untuk vibe terbaik.</p>
+          <div class="tag-row"><span class="mini-tag food">Italian · Authentic</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">21:00</div>
+        <div class="sch-icon viral">🍸</div>
+        <div class="sch-content">
+          <h4>Drinks — La Favela</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Kayu Aya No.177X, Seminyak
+          </div>
+          <p class="note">Bar dengan dekorasi vintage Brazil yang surreal. Live DJ set mulai pukul 22:00. Cocok untuk after-dinner drink singkat.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral Bar</span></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">3</span> Hari Ketiga</div>
+        <div class="day-title">Heritage &amp; <span class="italic">Culinary Closing</span></div>
+        <div class="day-region">Tanah Lot — Seminyak — Airport</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill viral">Tanah Lot</span>
+        <span class="day-pill food">Farewell</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">09:00</div>
+        <div class="sch-icon">🥐</div>
+        <div class="sch-content">
+          <h4>Sarapan Santai di Hotel</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Hotel Canggu
+          </div>
+          <p class="note">Slow morning untuk recharge. Manfaatkan spa session singkat sebelum check-out.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">10:30</div>
+        <div class="sch-icon viral">🛕</div>
+        <div class="sch-content">
+          <h4>Tanah Lot Temple</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Beraban, Kediri, Tabanan · ~45 menit dari Canggu
+          </div>
+          <p class="note">Pura di atas batu karang di tengah laut — ikon Bali yang paling difoto. Waktu terbaik sebelum jam 12 untuk menghindari crowd &amp; panas. Area heritage, harap berpakaian sopan (sarung disediakan).</p>
+          <div class="tag-row"><span class="mini-tag viral">Heritage · Iconic</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">13:00</div>
+        <div class="sch-icon food">🍤</div>
+        <div class="sch-content">
+          <h4>Lunch — Surya Seafood @ Tanah Lot</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Tanah Lot, Saba, Tabanan
+          </div>
+          <p class="note">Seafood segar dengan view Tanah Lot. Paket set menu disarankan untuk efisiensi.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">15:30</div>
+        <div class="sch-icon">🛍️</div>
+        <div class="sch-content">
+          <h4>Shopping Singkat — Seminyak Village / Boutique</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Raya Seminyak
+          </div>
+          <p class="note">Oleh-oleeh khas: kain endek, keramik Jenggala, atau fragrance dari Sensatia Boutique. Semuanya premium &amp; local-made.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">17:00</div>
+        <div class="sch-icon viral">🌅</div>
+        <div class="sch-content">
+          <h4>Sunset Drinks — Potato Head Beach Club</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Petitenget No.51B, Seminyak
+          </div>
+          <p class="note">Ikon arsitektur Bali modern dengan kolam infinity menghadap laut. Sun loungers tiered — reservasi studio deck untuk pengalaman premium.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral · Iconic</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">19:30</div>
+        <div class="sch-icon food">🍽️</div>
+        <div class="sch-content">
+          <h4>Farewell Dinner — Sarong / Mama San</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Petitenget No.168X (Sarong) / Jl. Raya Kerobokan (Mama San)
+          </div>
+          <p class="note">Sarong untuk pan-Asian fine dining di taman tropis elegan. Mama San untuk Asian fusion dengan vibe industrial chic. Keduanya butuh reservasi jauh hari.</p>
+          <div class="tag-row"><span class="mini-tag food">Fine Dining · Farewell</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">22:00</div>
+        <div class="sch-icon">✈️</div>
+        <div class="sch-content">
+          <h4>Transfer ke Bandara Ngurah Rai</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Bandara Internasional I Gusti Ngurah Rai (DPS)
+          </div>
+          <p class="note">Perjalanan ~45 menit malam hari. Disarankan keberangkatan setelah pukul 22:00 agar dinner santai.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ════════════════════════ OPSI B — 4D3N ═══════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section class="itinerary-section" id="option-b" style="background: linear-gradient(180deg, var(--cream) 0%, #fff 30%, #fff 100%);">
+  <div class="opt-divider">
+    <div class="num">B</div>
+    <div class="opt-divider-content">
+      <div class="opt-divider-eyebrow">Opsi B · 4 Hari 3 Malam · Rekomendasi</div>
+      <h2>Sport &amp; <span class="italic">Culture Blend</span></h2>
+      <p class="opt-divider-desc">Canggu-Seminyak + Ubud + Uluwatu. Padan seimbang antara sport modern, budaya Bali autentik, dan kuliner lokal + fine dining.</p>
+    </div>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">1</span> Hari Pertama</div>
+        <div class="day-title">Seminyak <span class="italic">Welcome &amp; Sport</span></div>
+        <div class="day-region">Seminyak — Canggu</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill sport">Padel</span>
+        <span class="day-pill viral">Beach Club</span>
+        <span class="day-pill food">Mexican Night</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">14:00</div>
+        <div class="sch-icon">🏨</div>
+        <div class="sch-content">
+          <h4>Check-in Hotel &amp; Welcome Drink</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Seminyak, Bali
+          </div>
+          <p class="note">Check-in early, butler service tersedia untuk hotel bintang 5. Briefing singkat dengan concierge untuk konfirmasi reservasi.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">16:00</div>
+        <div class="sch-icon sport">🎾</div>
+        <div class="sch-content">
+          <h4>Sesi Padel — Padel Bali Canggu</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Pantai Berawa, Canggu
+          </div>
+          <p class="note">Sesi sore hari di klub utama. Tersedia pro-shop untuk peralatan, dan lounge untuk post-game refreshment.</p>
+          <div class="tag-row"><span class="mini-tag sport">Padel · 90 menit</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">18:30</div>
+        <div class="sch-icon viral">🌅</div>
+        <div class="sch-content">
+          <h4>Sunset — Potato Head Beach Club</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Petitenget No.51B, Seminyak
+          </div>
+          <p class="note">Reservasi studio deck di kolam tiered. Sunset pukul 18:30-19:00 adalah golden hour. Cocktail signature: "Ketut" atau "Lychee Martini".</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral · Iconic</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">20:00</div>
+        <div class="sch-icon food">🌮</div>
+        <div class="sch-content">
+          <h4>Dinner — Motel Mexicola / Bambu</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Kayu Aya No.117, Seminyak
+          </div>
+          <p class="note">Motel Mexicola untuk pengalaman fun &amp; viral dengan dekorasi neon pink 60s. Bambu untuk alternatif yang lebih intimate &amp; refined.</p>
+          <div class="tag-row"><span class="mini-tag food">Mexican · Viral</span></div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="hotel-rec">
+      <div>
+        <div class="hotel-rec-icon">🏨</div>
+      </div>
+      <div style="flex:1; min-width: 240px;">
+        <div class="hotel-rec-label">Rekomendasi Menginap</div>
+        <div class="hotel-rec-name">The Legian Bali / W Bali — Seminyak</div>
+        <div class="hotel-rec-why">Suite private dengan direct beach access, butler service 24 jam, dan lokasi berjalan kaki ke Potato Head. Cocok untuk post-event relaxation.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">2</span> Hari Kedua</div>
+        <div class="day-title">Canggu <span class="italic">Padel &amp; Beach</span></div>
+        <div class="day-region">Canggu</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill sport">Padel</span>
+        <span class="day-pill viral">Beach Club</span>
+        <span class="day-pill food">Asian Fusion</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">08:00</div>
+        <div class="sch-icon food">🥐</div>
+        <div class="sch-content">
+          <h4>Sarapan — Crate Café</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Batu Bolong No.18, Canggu
+          </div>
+          <p class="note">All-day breakfast &amp; specialty coffee. Cobain "Big Brekkie" atau "Acai Bowl" — porsi generous untuk energi padel.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">09:30</div>
+        <div class="sch-icon sport">🎾</div>
+        <div class="sch-content">
+          <h4>Sesi Padel — Sunset Padel Berawa</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Pura Batu Pageh, Berawa, Canggu
+          </div>
+          <p class="note">Sesi pagi lebih sejuk. Tersedia coach untuk drilling technique 60 menit + main game 30 menit.</p>
+          <div class="tag-row"><span class="mini-tag sport">Padel · 90 menit</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">12:30</div>
+        <div class="sch-icon food">🥗</div>
+        <div class="sch-content">
+          <h4>Lunch — The Shady Shack</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Kayu Putih No.5, Canggu
+          </div>
+          <p class="note">Plant-based café paling estetik di Canggu. Cobain "Tempeh Burger" atau "Buddha Bowl". Spot foto viral di taman tropis.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">14:00</div>
+        <div class="sch-icon viral">🏖️</div>
+        <div class="sch-content">
+          <h4>Beach Club — The Lawn / Tropicola</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Canggu / Batu Belig
+          </div>
+          <p class="note">Afternoon chill di daybed. Reservasi cabana untuk privasi. Swim, baca, dan nikmati sunset yang akan datang.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral Spot</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">18:00</div>
+        <div class="sch-icon viral">🌅</div>
+        <div class="sch-content">
+          <h4>Sunset — Echo Beach</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Pantai Batu Mejan, Canggu
+          </div>
+          <p class="note">Pantai dengan batu karang hitam khas Canggu. Spot fotografi golden hour yang lebih natural &amp; tenang dibanding beach club.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">19:30</div>
+        <div class="sch-icon food">🍜</div>
+        <div class="sch-content">
+          <h4>Dinner — Mason While Pegoda</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Batu Bolong, Canggu
+          </div>
+          <p class="note">Modern Asian fusion dengan interior industrial. Signature: "Peking Duck Tacos" &amp; "Crispy Pork Belly". Vibe cas-ual namun refined.</p>
+          <div class="tag-row"><span class="mini-tag food">Asian Fusion</span></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">3</span> Hari Ketiga</div>
+        <div class="day-title">Ubud <span class="italic">Cultural &amp; Culinary Day</span></div>
+        <div class="day-region">Ubud — Tegallalang — Campuhan</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill viral">Tegallalang</span>
+        <span class="day-pill food">Babi Guling</span>
+        <span class="day-pill food">Bebek Bengil</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">08:00</div>
+        <div class="sch-icon">🚗</div>
+        <div class="sch-content">
+          <h4>Travel ke Ubud</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            ~1.5 jam dari Canggu
+          </div>
+          <p class="note">Sarapan bawaan dari hotel atau pit stop di Bisma Eight untuk kopi &amp; croissant. Check-in hotel Ubud sebelum 10:00 jika early arrival.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">10:00</div>
+        <div class="sch-icon viral">🌾</div>
+        <div class="sch-content">
+          <h4>Tegallalang Rice Terrace</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Tegallalang, Gianyar · 8.4333°S, 115.2830°E
+          </div>
+          <p class="note">Sawah terasering paling ikonik Bali. Tersedia foto spot dengan swing (Bali Swing / Aloha Swing) — pengalaman viral wajib. Turun ke sawah untuk foto dari bawah.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral · Iconic</span><span class="mini-tag">Bali Swing</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">12:00</div>
+        <div class="sch-icon food">🐷</div>
+        <div class="sch-content">
+          <h4>Lunch — Babi Guling Ibu Oka</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Suweta No.2, Ubud (lokasi utama)
+          </div>
+          <p class="note">Legenda kuliner Bali — babi guling paling terkenal di dunia. Saat Anthony Bourdain mampir. Lokasi sekarang di warung baru yang lebih nyaman. Order "Special" untuk komplit dengan urutan, kulit, &amp; sambal matah.</p>
+          <div class="tag-row"><span class="mini-tag food">Kuliner Legenda</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">14:00</div>
+        <div class="sch-icon viral">🚶</div>
+        <div class="sch-content">
+          <h4>Campuhan Ridge Walk</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Raya Campuhan, Ubud
+          </div>
+          <p class="note">Jalur setapak di punggung bukit hijau di antara dua sungai. Walk ringan ~2 km. Spot foto yang sangat Instagramable. Hindari jam 12-14 (panas).</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral Spot</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">15:30</div>
+        <div class="sch-icon food">🦆</div>
+        <div class="sch-content">
+          <h4>Afternoon Tea — Bebek Bengil (Dirty Duck Diner)</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Hanoman No.88, Ubud, Gianyar
+          </div>
+          <p class="note">Restoran legendaris dengan sawah view. Signature: "Bebek Betutu" atau "Crispy Duck". Pilihan meja di pavilion terbuka menghadap sawah.</p>
+          <div class="tag-row"><span class="mini-tag food">Signature Dish</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">17:00</div>
+        <div class="sch-icon">🛍️</div>
+        <div class="sch-content">
+          <h4>Ubud Market &amp; Palace</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Raya Ubud, Gianyar
+          </div>
+          <p class="note">Pasar seni tradisional — kerajinan kayu, perak, kain, lukisan. Pura Saren (Ubud Palace) di sebelahnya untuk foto heritage. Bargaining dengan sopan.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">19:00</div>
+        <div class="sch-icon food">🍷</div>
+        <div class="sch-content">
+          <h4>Dinner — Locavore / Apéritif</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Dewi Sita No.10 (Locavore) / Jl. Suweta (Apéritif)
+          </div>
+          <p class="note">Locavore: fine dining modern European dengan bahan local — peringkat Asia's 50 Best. Butuh reservasi 2-3 bulan di muka. Alternatif: Apéritif dengan colonial-era fine dining vibe yang lebih accessible.</p>
+          <div class="tag-row"><span class="mini-tag food">Fine Dining · World-Class</span></div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="hotel-rec">
+      <div>
+        <div class="hotel-rec-icon">🏨</div>
+      </div>
+      <div style="flex:1; min-width: 240px;">
+        <div class="hotel-rec-label">Rekomendasi Menginap (Ubud)</div>
+        <div class="hotel-rec-name">Mandapa, A Ritz-Carlton Reserve / COMO Shambhala</div>
+        <div class="hotel-rec-why">Villa di tepi Sungai Ayung dengan pemandangan sawah &amp; hutan. Mandapa untuk pengalaman mewah dengan padel court access (private club). COMO Shambhala untuk wellness retreat.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">4</span> Hari Keempat</div>
+        <div class="day-title">Uluwatu <span class="italic">Cliffs &amp; Sunset</span></div>
+        <div class="day-region">Uluwatu — Jimbaran — Airport</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill viral">Uluwatu</span>
+        <span class="day-pill viral">Kecak</span>
+        <span class="day-pill food">Clifftop</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">08:00</div>
+        <div class="sch-icon">🥐</div>
+        <div class="sch-content">
+          <h4>Sarapan &amp; Check-out Ubud</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Hotel Ubud
+          </div>
+          <p class="note">Slow breakfast menghadap sawah sebelum perjalanan ke selatan. Check-out pukul 10:00.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">10:30</div>
+        <div class="sch-icon">🚗</div>
+        <div class="sch-content">
+          <h4>Travel ke Uluwatu</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            ~2 jam dari Ubud
+          </div>
+          <p class="note">Pit stop singkat di Jimbaran untuk lihat pantai atau check-in di hotel Uluwatu.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">12:00</div>
+        <div class="sch-icon viral">🏖️</div>
+        <div class="sch-content">
+          <h4>Padang Padang Beach</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Labuansait, Pecatu · 8.8302°S, 115.0876°E
+          </div>
+          <p class="note">Pantai kecil di antara tebing karang, lokasi syuting film "Eat Pray Love". Spot foto sangat viral. Akses menuruni tangga sempit.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral · Iconic</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">13:30</div>
+        <div class="sch-icon food">🦞</div>
+        <div class="sch-content">
+          <h4>Lunch — Single Fin Uluwatu</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Pemutih, Pecatu · di atas tebing Suluban
+          </div>
+          <p class="note">Clifftop bar &amp; restaurant dengan view ombak terbaik Bali. Menu international dengan seafood grill. Reservasi tabel tepi tebing.</p>
+          <div class="tag-row"><span class="mini-tag food">Clifftop · Viral</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">16:00</div>
+        <div class="sch-icon viral">🛕</div>
+        <div class="sch-content">
+          <h4>Uluwatu Temple</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Raya Uluwatu, Pecatu · 8.8290°S, 115.0879°E
+          </div>
+          <p class="note">Salah satu pura sad kahyangan terletak di tebing 70 meter di atas laut. Hati-hati monyet (mengambil barang). Sarung disediakan di gerbang.</p>
+          <div class="tag-row"><span class="mini-tag viral">Heritage · Iconic</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">18:00</div>
+        <div class="sch-icon viral">💃</div>
+        <div class="sch-content">
+          <h4>Kecak Dance at Sunset</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Amphitheater Uluwatu Temple
+          </div>
+          <p class="note">Tarian tradisional Bali dengan 60+ penari laki-laki tanpa musik instrumental, hanya suara "cak cak cak". Sunset sebagai latar. Tiket harus dibeli jauh hari.</p>
+          <div class="tag-row"><span class="mini-tag viral">Budaya · Sunset</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">19:30</div>
+        <div class="sch-icon food">🍽️</div>
+        <div class="sch-content">
+          <h4>Farewell Dinner — JuMaNa at Banyan Tree Ungasan</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Banyan Tree Ungasan, Jl. Pantai Mengiat, Nusa Dua
+          </div>
+          <p class="note">Fine dining clifftop dengan menu modern pan-Asian. Reservasi private dining pavilion untuk pengalaman intim &amp; eksklusif. View sunset ke laut selatan.</p>
+          <div class="tag-row"><span class="mini-tag food">Fine Dining · Clifftop</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">22:30</div>
+        <div class="sch-icon">✈️</div>
+        <div class="sch-content">
+          <h4>Transfer ke Bandara</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Bandara Ngurah Rai · ~45 menit dari Uluwatu
+          </div>
+          <p class="note">Late night flight recommendation atau extra night di hotel bandara.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ════════════════════════ OPSI C — 5D4N ═══════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section class="itinerary-section" id="option-c">
+  <div class="opt-divider">
+    <div class="num">C</div>
+    <div class="opt-divider-content">
+      <div class="opt-divider-eyebrow">Opsi C · 5 Hari 4 Malam · Complete</div>
+      <h2>Sport, Culture &amp; <span class="italic">Island</span></h2>
+      <p class="opt-divider-desc">Semua highlight Opsi B + day trip Nusa Penida: Kelingking Beach, Angel's Billabong, Broken Beach, dan snorkeling Crystal Bay.</p>
+    </div>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">1</span> Hari Pertama</div>
+        <div class="day-title">Seminyak <span class="italic">Welcome</span></div>
+        <div class="day-region">Seminyak — Canggu</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill sport">Padel</span>
+        <span class="day-pill viral">Beach Club</span>
+        <span class="day-pill food">Italian</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">14:00</div>
+        <div class="sch-icon">🏨</div>
+        <div class="sch-content">
+          <h4>Check-in Hotel &amp; Briefing</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Seminyak, Bali
+          </div>
+          <p class="note">Welcome drink &amp; spa session singkat (30 menit neck &amp; shoulder) untuk recovery post-event.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">16:00</div>
+        <div class="sch-icon sport">🎾</div>
+        <div class="sch-content">
+          <h4>Sesi Padel — Padel Bali Canggu</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Pantai Berawa, Canggu
+          </div>
+          <p class="note">Sesi sore untuk warm-up &amp; adaptasi iklim. Coach lokal untuk teknik groundstroke.</p>
+          <div class="tag-row"><span class="mini-tag sport">Padel · 90 menit</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">18:30</div>
+        <div class="sch-icon viral">🌅</div>
+        <div class="sch-content">
+          <h4>Sunset — Potato Head Beach Club</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Petitenget No.51B, Seminyak
+          </div>
+          <p class="note">Reservasi studio deck di kolam tiered. Sunset pukul 18:30-19:00 adalah golden hour.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral · Iconic</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">20:00</div>
+        <div class="sch-icon food">🍝</div>
+        <div class="sch-content">
+          <h4>Dinner — Da Maria</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Kayu Aya No.85, Seminyak
+          </div>
+          <p class="note">Italian authentic dengan Amalfi style interior. Reservasi outdoor terrace.</p>
+          <div class="tag-row"><span class="mini-tag food">Italian</span></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">2</span> Hari Kedua</div>
+        <div class="day-title">Padel Intensive <span class="italic">Canggu</span></div>
+        <div class="day-region">Canggu — Berawa</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill sport">Padel · 2x</span>
+        <span class="day-pill viral">Beach Clubs</span>
+        <span class="day-pill food">Asian Fusion</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">08:00</div>
+        <div class="sch-icon food">☕</div>
+        <div class="sch-content">
+          <h4>Sarapan — Revolver Espresso</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Kayu Aya No.3X, Seminyak
+          </div>
+          <p class="note">Kopi specialty paling legendaris di Bali. Order single-origin pour-over &amp; "Big Brekkie".</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">09:30</div>
+        <div class="sch-icon sport">🎾</div>
+        <div class="sch-content">
+          <h4>Sesi Padel Pagi — Sunset Padel Berawa</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Pura Batu Pageh, Berawa
+          </div>
+          <p class="note">Sesi pagi lebih sejuk. Coach untuk drilling technique 60 menit + main game 30 menit.</p>
+          <div class="tag-row"><span class="mini-tag sport">Padel · 90 menit</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">12:30</div>
+        <div class="sch-icon food">🥗</div>
+        <div class="sch-content">
+          <h4>Lunch — Sisterfields Café</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Kayu Aya No.8, Seminyak
+          </div>
+          <p class="note">Modern Australian brunch paling populer. Cobain "Acai Bowl" &amp; "Smashed Avo".</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">15:00</div>
+        <div class="sch-icon viral">🏖️</div>
+        <div class="sch-content">
+          <h4>Beach Club — Tropicola / The Lawn</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Batu Belig / Canggu
+          </div>
+          <p class="note">Tropicola untuk vibe retro Miami dengan kolam berwarna-warni. Reservasi sun lounger premium.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral Spot</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">18:30</div>
+        <div class="sch-icon sport">🎾</div>
+        <div class="sch-content">
+          <h4>Sesi Padel Sore — Padel Club Bali Canggu</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Pantai Berawa No.99, Canggu
+          </div>
+          <p class="note">Sesi kedua untuk match play. Booking lapangan indoor dengan pencahayaan optimal.</p>
+          <div class="tag-row"><span class="mini-tag sport">Padel · 90 menit</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">20:30</div>
+        <div class="sch-icon food">🍜</div>
+        <div class="sch-content">
+          <h4>Dinner — Mason While Pegoda</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Batu Bolong, Canggu
+          </div>
+          <p class="note">Modern Asian fusion. Signature: "Peking Duck Tacos" &amp; "Crispy Pork Belly".</p>
+          <div class="tag-row"><span class="mini-tag food">Asian Fusion</span></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">3</span> Hari Ketiga</div>
+        <div class="day-title">Ubud <span class="italic">Cultural Day</span></div>
+        <div class="day-region">Tegallalang — Ubud Center</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill viral">Tegallalang</span>
+        <span class="day-pill food">Babi Guling</span>
+        <span class="day-pill food">Bebek Bengil</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">08:00</div>
+        <div class="sch-icon">🚗</div>
+        <div class="sch-content">
+          <h4>Travel ke Ubud</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            ~1.5 jam dari Seminyak
+          </div>
+          <p class="note">Disarankan private car VIP. Pit stop singkat di Bisma Eight untuk kopi &amp; croissant.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">10:00</div>
+        <div class="sch-icon viral">🌾</div>
+        <div class="sch-content">
+          <h4>Tegallalang Rice Terrace + Bali Swing</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Tegallalang, Gianyar
+          </div>
+          <p class="note">Sawah terasering paling ikonik Bali. Paket foto swing di atas sawah dengan harness professional. Vibe foto sangat viral.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral · Iconic</span><span class="mini-tag">Bali Swing</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">12:30</div>
+        <div class="sch-icon food">🐷</div>
+        <div class="sch-content">
+          <h4>Lunch — Babi Guling Ibu Oka</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Suweta No.2, Ubud
+          </div>
+          <p class="note">Legenda kuliner Bali. Order "Special" untuk komplit dengan urutan, kulit, &amp; sambal matah.</p>
+          <div class="tag-row"><span class="mini-tag food">Kuliner Legenda</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">14:00</div>
+        <div class="sch-icon viral">🚶</div>
+        <div class="sch-content">
+          <h4>Campuhan Ridge Walk</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Raya Campuhan, Ubud
+          </div>
+          <p class="note">Jalur setapak di punggung bukit hijau di antara dua sungai. Walk ringan ~2 km dengan view sangat Instagramable.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral Spot</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">15:30</div>
+        <div class="sch-icon food">🦆</div>
+        <div class="sch-content">
+          <h4>Tea — Bebek Bengil (Dirty Duck Diner)</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Hanoman No.88, Ubud
+          </div>
+          <p class="note">Signature: "Bebek Betutu" atau "Crispy Duck". Pavilion terbuka menghadap sawah.</p>
+          <div class="tag-row"><span class="mini-tag food">Signature Dish</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">17:00</div>
+        <div class="sch-icon">🛍️</div>
+        <div class="sch-content">
+          <h4>Ubud Market &amp; Palace</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Raya Ubud, Gianyar
+          </div>
+          <p class="note">Pasar seni tradisional &amp; Pura Saren untuk foto heritage. Bargaining dengan sopan.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">19:00</div>
+        <div class="sch-icon food">🍷</div>
+        <div class="sch-content">
+          <h4>Dinner — Apéritif / Locavore</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Suweta / Jl. Dewi Sita, Ubud
+          </div>
+          <p class="note">Apéritif untuk colonial-era fine dining, 7-course tasting menu. Locavore untuk modern European dengan bahan local (reservasi 2-3 bulan di muka).</p>
+          <div class="tag-row"><span class="mini-tag food">Fine Dining · World-Class</span></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">4</span> Hari Keempat</div>
+        <div class="day-title">Nusa Penida <span class="italic">Island Day</span></div>
+        <div class="day-region">Sanur → Nusa Penida</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill viral">Kelingking</span>
+        <span class="day-pill viral">Snorkeling</span>
+        <span class="day-pill food">Seafood</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">06:30</div>
+        <div class="sch-icon">⛴️</div>
+        <div class="sch-content">
+          <h4>Early Departure ke Sanur Harbor</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Sanur Beach Harbor, Denpasar
+          </div>
+          <p class="note">Bento breakfast disiapkan hotel. Check-in kapal 30 menit sebelum keberangkatan.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">07:30</div>
+        <div class="sch-icon">⛵</div>
+        <div class="sch-content">
+          <h4>Fast Boat ke Nusa Penida</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Sanur → Toyapakeh Harbor, Nusa Penida · ~45 menit
+          </div>
+          <p class="note">Disarankan booking fast boat premium (Mola Mola, El Rey, atau Maruti Express). Private charter juga tersedia untuk pengalaman VIP.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">09:00</div>
+        <div class="sch-icon viral">🦖</div>
+        <div class="sch-content">
+          <h4>Kelingking Beach Viewpoint</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Bunga Mekar, Nusa Penida · 8.7659°S, 115.4639°E
+          </div>
+          <p class="note">Iconic cliff berbentuk kepala T-Rex yang menjorok ke laut. Foto paling viral di Bali. Hati-hati di tepi tebing, tidak ada pagar. Gunakan guide local untuk spot foto terbaik.</p>
+          <div class="tag-row"><span class="mini-tag viral">Iconic · World Famous</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">11:00</div>
+        <div class="sch-icon viral">🏝️</div>
+        <div class="sch-content">
+          <h4>Angel's Billabong &amp; Broken Beach</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Sakti, Nusa Penida · berdekatan
+          </div>
+          <p class="note">Angel's Billabong: kolam alami dengan air laut jernih. Broken Beach: lengkungan tebing seperti jembatan dengan kolam di tengah. Dua spot viral berdekatan.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral Spot</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">13:00</div>
+        <div class="sch-icon food">🦞</div>
+        <div class="sch-content">
+          <h4>Lunch — Warung Local @ Crystal Bay</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Crystal Bay area, Nusa Penida
+          </div>
+          <p class="note">Grilled fish fresh, nasi campur, &amp; young coconut. Sederhana tapi autentik.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">15:00</div>
+        <div class="sch-icon viral">🐠</div>
+        <div class="sch-content">
+          <h4>Snorkeling — Crystal Bay &amp; Manta Point</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Crystal Bay / Manta Point, Nusa Penida
+          </div>
+          <p class="note">Crystal Bay: terumbu karang tropis dengan ikan clown fish. Manta Point: berenang dengan manta ray (season Juli-November). Private boat charter disarankan.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral · Adventure</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">17:00</div>
+        <div class="sch-icon">⛴️</div>
+        <div class="sch-content">
+          <h4>Fast Boat kembali ke Sanur</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Toyapakeh → Sanur Harbor · ~45 menit
+          </div>
+          <p class="note">Boat terakhir biasanya pukul 17:00. Pastikan boarding 30 menit sebelumnya.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">19:30</div>
+        <div class="sch-icon food">🍷</div>
+        <div class="sch-content">
+          <h4>Dinner — Sarong / Métis Seminyak</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Petitenget No.168X / Jl. Raya Petitenget
+          </div>
+          <p class="note">Sarong untuk pan-Asian fine dining di taman tropis. Métis untuk French-Mediterranean dengan garden setting.</p>
+          <div class="tag-row"><span class="mini-tag food">Fine Dining</span></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- DAY 5 -->
+  <div class="day-block">
+    <div class="day-header">
+      <div class="day-header-left">
+        <div class="day-tag"><span class="num-circle">5</span> Hari Kelima</div>
+        <div class="day-title">Uluwatu &amp; <span class="italic">Farewell</span></div>
+        <div class="day-region">Uluwatu — Nusa Dua — Airport</div>
+      </div>
+      <div class="day-header-right">
+        <span class="day-pill viral">Uluwatu</span>
+        <span class="day-pill viral">Kecak</span>
+        <span class="day-pill food">Clifftop</span>
+      </div>
+    </div>
+
+    <ul class="schedule">
+      <li class="schedule-item">
+        <div class="sch-time">09:00</div>
+        <div class="sch-icon">🥐</div>
+        <div class="sch-content">
+          <h4>Sarapan Santai &amp; Check-out</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Hotel Seminyak
+          </div>
+          <p class="note">Slow breakfast &amp; souvenir packing. Late check-out bisa di-request.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">11:00</div>
+        <div class="sch-icon">🚗</div>
+        <div class="sch-content">
+          <h4>Travel ke Uluwatu</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            ~1 jam dari Seminyak
+          </div>
+          <p class="note">Pit stop di Pantai Jimbaran untuk lihat nelayan tradisional.</p>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">12:00</div>
+        <div class="sch-icon viral">🏖️</div>
+        <div class="sch-content">
+          <h4>Padang Padang Beach</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Labuansait, Pecatu
+          </div>
+          <p class="note">Pantai kecil di antara tebing karang, lokasi syuting film "Eat Pray Love". Spot foto sangat viral.</p>
+          <div class="tag-row"><span class="mini-tag viral">Viral · Iconic</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">13:30</div>
+        <div class="sch-icon food">🦞</div>
+        <div class="sch-content">
+          <h4>Lunch — Single Fin Uluwatu</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Pemutih, Pecatu
+          </div>
+          <p class="note">Clifftop bar &amp; restaurant dengan view ombak terbaik Bali. Reservasi tabel tepi tebing.</p>
+          <div class="tag-row"><span class="mini-tag food">Clifftop · Viral</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">16:00</div>
+        <div class="sch-icon viral">🛕</div>
+        <div class="sch-content">
+          <h4>Uluwatu Temple</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Jl. Raya Uluwatu, Pecatu
+          </div>
+          <p class="note">Pura di tebing 70 meter di atas laut. Sarung disediakan di gerbang.</p>
+          <div class="tag-row"><span class="mini-tag viral">Heritage · Iconic</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">18:00</div>
+        <div class="sch-icon viral">💃</div>
+        <div class="sch-content">
+          <h4>Kecak Dance at Sunset</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Amphitheater Uluwatu Temple
+          </div>
+          <p class="note">Tarian tradisional dengan 60+ penari, sunset sebagai latar. Tiket harus dibeli jauh hari.</p>
+          <div class="tag-row"><span class="mini-tag viral">Budaya · Sunset</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">19:30</div>
+        <div class="sch-icon food">🍽️</div>
+        <div class="sch-content">
+          <h4>Farewell Dinner — JuMaña at Banyan Tree</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Banyan Tree Ungasan, Nusa Dua
+          </div>
+          <p class="note">Fine dining clifftop dengan menu modern pan-Asian. Private dining pavilion untuk pengalaman eksklusif.</p>
+          <div class="tag-row"><span class="mini-tag food">Fine Dining · Clifftop</span></div>
+        </div>
+      </li>
+      <li class="schedule-item">
+        <div class="sch-time">22:30</div>
+        <div class="sch-icon">✈️</div>
+        <div class="sch-content">
+          <h4>Transfer ke Bandara Ngurah Rai</h4>
+          <div class="loc">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+            Bandara Internasional I Gusti Ngurah Rai (DPS)
+          </div>
+          <p class="note">VIP transfer dengan luxury car. Late night flight disarankan agar tidak terburu-buru.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════════ HIGHLIGHTS / SPOTLIGHT ═══════════════ -->
+<section class="highlights-section" id="highlights">
+  <div class="highlights-inner">
+    <div class="highlights-header">
+      <h3>Spotlight <span class="italic">Tempat-Tempat</span> Kunci</h3>
+      <p>Rangkuman tempat-tempat utama yang akan dikunjungi, dikelompokkan per kategori untuk referensi cepat.</p>
+    </div>
+
+    <div class="cat-grid">
+
+      <!-- PADEL -->
+      <div class="cat-card">
+        <div class="cat-head sport">
+          <span class="cat-emoji">🎾</span>
+          <div class="cat-title">Padel Venue</div>
+          <div class="cat-subtitle">Lapangan standar internasional di Bali</div>
+        </div>
+        <div class="cat-body">
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Padel Club Bali Canggu</div>
+            <div class="cat-place-region">Jl. Pantai Berawa No.99, Canggu</div>
+            <div class="cat-place-note">4 lapangan indoor, rental pro-grade, lounge, coach bersertifikat.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Sunset Padel Berawa</div>
+            <div class="cat-place-region">Jl. Pura Batu Pageh, Berawa, Canggu</div>
+            <div class="cat-place-note">Lapangan outdoor, suasana santai, cocok untuk sesi pagi.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Mandapa Private Court (opsional)</div>
+            <div class="cat-place-region">Ritz-Carlton Reserve, Ubud</div>
+            <div class="cat-place-note">Lapangan private untuk in-house guest, by reservation.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIRAL -->
+      <div class="cat-card">
+        <div class="cat-head viral">
+          <span class="cat-emoji">📸</span>
+          <div class="cat-title">Viral Spots</div>
+          <div class="cat-subtitle">Tempat paling difoto di Bali</div>
+        </div>
+        <div class="cat-body">
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Tegallalang Rice Terrace + Bali Swing</div>
+            <div class="cat-place-region">Tegallalang, Gianyar</div>
+            <div class="cat-place-note">Sawah terasering ikonik + swing di atas sawah.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Kelingking Beach (Nusa Penida)</div>
+            <div class="cat-place-region">Bunga Mekar, Nusa Penida</div>
+            <div class="cat-place-note">Cliff berbentuk T-Rex — foto paling viral di Bali.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Uluwatu Temple</div>
+            <div class="cat-place-region">Pecatu, South Kuta</div>
+            <div class="cat-place-note">Pura di tebing 70m di atas laut + Kecak Dance sunset.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Tanah Lot Temple</div>
+            <div class="cat-place-region">Beraban, Kediri, Tabanan</div>
+            <div class="cat-place-note">Pura di batu karang di tengah laut, ikon Bali.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Padang Padang Beach</div>
+            <div class="cat-place-region">Pecatu</div>
+            <div class="cat-place-note">Lokasi syuting "Eat Pray Love", pantai viral di antara tebing.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> La Brisa / Potato Head / Tropicola</div>
+            <div class="cat-place-region">Canggu &amp; Seminyak</div>
+            <div class="cat-place-note">Beach clubs paling viral dengan kolam infinity &amp; sunset.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOD -->
+      <div class="cat-card">
+        <div class="cat-head food">
+          <span class="cat-emoji">🍽️</span>
+          <div class="cat-title">Food Hunting</div>
+          <div class="cat-subtitle">Dari kuliner lokal hingga fine dining</div>
+        </div>
+        <div class="cat-body">
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Babi Guling Ibu Oka</div>
+            <div class="cat-place-region">Jl. Suweta No.2, Ubud</div>
+            <div class="cat-place-note">Legenda kuliner Bali — babi guling paling terkenal di dunia.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Bebek Bengil (Dirty Duck Diner)</div>
+            <div class="cat-place-region">Jl. Hanoman No.88, Ubud</div>
+            <div class="cat-place-note">Bebek betutu &amp; crispy duck, sawah view.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Locavore</div>
+            <div class="cat-place-region">Jl. Dewi Sita No.10, Ubud</div>
+            <div class="cat-place-note">Fine dining modern European, peringkat Asia's 50 Best.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Sarong</div>
+            <div class="cat-place-region">Jl. Petitenget No.168X, Seminyak</div>
+            <div class="cat-place-note">Pan-Asian fine dining di taman tropis elegan.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Da Maria</div>
+            <div class="cat-place-region">Jl. Kayu Aya No.85, Seminyak</div>
+            <div class="cat-place-note">Italian authentic, Amalfi style interior.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> JuMaña at Banyan Tree</div>
+            <div class="cat-place-region">Banyan Tree Ungasan, Nusa Dua</div>
+            <div class="cat-place-note">Fine dining clifftop, sunset ke laut selatan.</div>
+          </div>
+          <div class="cat-place">
+            <div class="cat-place-name"><span class="pin"></span> Single Fin</div>
+            <div class="cat-place-region">Jl. Pemutih, Pecatu</div>
+            <div class="cat-place-note">Clifftop bar &amp; restaurant, view ombak terbaik Bali.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PRACTICAL INFO ═══════════════ -->
+<section class="practical" id="practical">
+  <div class="practical-inner">
+    <div class="practical-header">
+      <div class="eyebrow">Catatan Praktis</div>
+      <h3>Hal-Hal Penting <span class="italic">Sebelum Berangkat</span></h3>
+    </div>
+
+    <div class="practical-grid">
+
+      <div class="practical-card">
+        <div class="practical-card-icon">🚗</div>
+        <h4>Transportasi</h4>
+        <ul>
+          <li>Disarankan private car VIP dengan driver (Mercedes V-Class / Alphard)</li>
+          <li>Aplikasi Gojek/Grab juga tersedia, tapi untuk area tertentu (Ubud) lebih terbatas</li>
+          <li>Nusa Penida: charter private boat via Sanur</li>
+          <li>Jarak: Seminyak ↔ Canggu ~20 menit, ↔ Ubud ~1.5 jam, ↔ Uluwatu ~1 jam</li>
+        </ul>
+      </div>
+
+      <div class="practical-card">
+        <div class="practical-card-icon">🏨</div>
+        <h4>Rekomendasi Hotel</h4>
+        <ul>
+          <li>Seminyak: The Legian Bali, W Bali, Capella</li>
+          <li>Canggu: COMO Uma Canggu, Hotel Tugu</li>
+          <li>Ubud: Mandapa Ritz-Carlton Reserve, COMO Shambhala, Bisma Eight</li>
+          <li>Uluwatu: Banyan Tree Ungasan, Six Senses Uluwatu, Bulgari Resort</li>
+          <li>Sanur: Fairmont Sanur (untuk akses Nusa Penida)</li>
+        </ul>
+      </div>
+
+      <div class="practical-card">
+        <div class="practical-card-icon">🎾</div>
+        <h4>Booking Padel</h4>
+        <ul>
+          <li>Booking minimal 3-5 hari di muka, terutama slot sore &amp; weekend</li>
+          <li>Coaching session: request coach lokal bersertifikat</li>
+          <li>Rental raket pro-grade tersedia di tempat</li>
+          <li>Siapkan handuk, sepatu indoor, dan air minum</li>
+        </ul>
+      </div>
+
+      <div class="practical-card">
+        <div class="practical-card-icon">🌤️</div>
+        <h4>Cuaca &amp; Best Time</h4>
+        <ul>
+          <li>Musim kemarau: April-Oktober (paling ideal)</li>
+          <li>Suhu: 26-32°C, kelembaban tinggi</li>
+          <li>Activities outdoor sebaiknya pagi (08-11) atau sore (15-18)</li>
+          <li>Bawa sun protection &amp; hidrasi cukup</li>
+        </ul>
+      </div>
+
+      <div class="practical-card">
+        <div class="practical-card-icon">👗</div>
+        <h4>Dress Code</h4>
+        <ul>
+          <li>Pura: sarung &amp; selendang (disediakan di lokasi)</li>
+          <li>Fine dining: smart casual, pakaian tertutup</li>
+          <li>Beach club: resort wear, sandal, sun protection</li>
+          <li>Padel: sportswear, sepatu indoor, topi</li>
+        </ul>
+      </div>
+
+      <div class="practical-card">
+        <div class="practical-card-icon">💰</div>
+        <h4>Budget Indikatif</h4>
+        <ul>
+          <li>Hotel bintang 5: USD 400-1,500/malam</li>
+          <li>Padel: USD 25-40/jam/lapangan (boleh split)</li>
+          <li>Coaching: USD 30-50/jam</li>
+          <li>Fine dining: USD 80-200/orang</li>
+          <li>Nusa Penida day trip: USD 150-350 (private)</li>
+          <li>Private car VIP: USD 80-150/hari</li>
+        </ul>
+      </div>
+
+      <div class="practical-card">
+        <div class="practical-card-icon">📱</div>
+        <h4>Kontak Penting</h4>
+        <ul>
+          <li>Emergency: 112 atau 118 (ambulans)</li>
+          <li>Tourism Police Bali: +62 361 222 200</li>
+          <li>RS Sanglah (Denpasar): +62 361 227 911</li>
+          <li>BIMC Hospital Kuta: +62 361 761 263</li>
+          <li>Fast boat ke Nusa Penida: Mola Mola, El Rey, Maruti Express</li>
+        </ul>
+      </div>
+
+      <div class="practical-card">
+        <div class="practical-card-icon">⏰</div>
+        <h4>Reservasi Wajib</h4>
+        <ul>
+          <li>Locavore: 2-3 bulan di muka</li>
+          <li>Sarong, JuMaña, Apéritif: 2 minggu di muka</li>
+          <li>Padel slot: 3-5 hari di muka</li>
+          <li>Fast boat Nusa Penida: 1 minggu di muka</li>
+          <li>Bali Swing: 1-2 hari di muka</li>
+          <li>Private car VIP: 1 minggu di muka</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="footer-mark">Bali · The Island of Gods</div>
+  <p>Itinerary ini disusun dengan perhatian pada detail dan preferensi personal. Semua tempat telah diverifikasi keberadaan &amp; aksesnya.</p>
+</footer>
+
+<script>
+  // Floating nav active state
+  const navLinks = document.querySelectorAll('.floating-nav a');
+  const sections = document.querySelectorAll('section[id]');
+
+  const observerOptions = {
+    rootMargin: '-40% 0px -55% 0px',
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach(section => observer.observe(section));
+
+  // Smooth reveal on scroll for day-blocks
+  const dayBlocks = document.querySelectorAll('.day-block, .opt-card, .cat-card');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -80px 0px' });
+
+  dayBlocks.forEach(block => {
+    block.style.opacity = '0';
+    block.style.transform = 'translateY(30px)';
+    block.style.transition = 'opacity 0.8s cubic-bezier(.2,.7,.2,1), transform 0.8s cubic-bezier(.2,.7,.2,1)';
+    revealObserver.observe(block);
+  });
+</script>
+
+</body>
+</html>
